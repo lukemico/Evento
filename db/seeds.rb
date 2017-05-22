@@ -44,7 +44,6 @@ event1 = Event.create({
   cost: 100.00,
   description: "The GA coding bootcamp",
   image: "www.test.test",
-  event_type_id: type4.id,
   location_id: loc1.id
 })
 
@@ -54,7 +53,6 @@ event2 = Event.create({
   cost: 20.00,
   description: "Learn to Iceskate",
   image: "www.iceskate.test",
-  event_type_id: type5.id,
   location_id: loc1.id
 })
 

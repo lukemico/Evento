@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   delete "/logout" => "session#destroy"
   get "/register" => "users#new"
 
+  get "/today" => "home#today"
   resources :users
   resources :events
 end

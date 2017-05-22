@@ -1,4 +1,9 @@
 class UsersController < ApplicationController
+  before_action :check_if_logged_out, only:[:new, :create]
+
+  before_action :check_if_logged_in, only: [:edit, :update, :show]
+
+  before_action :check_if_same_user, only: [:show, :edit]
 
   def index
   end
@@ -60,4 +65,26 @@ class UsersController < ApplicationController
     params.require(:user).permit(:first_name, :last_name,
     :email, :dob, :phone_number, :password, :password_confirmation)
   end
+
+  def check_if_logged_out
+    if(@current_user)
+      flash[:error] = "You are already logged in."
+      redirect_to(user_path(session[:user_id]))
+    end 
+  end
+
+  def check_if_logged_in
+    if(!@current_user)
+      flash[:error] = "You need to be logged in."
+      redirect_to("/login")
+    end
+  end
+
+  def check_if_same_user
+    if(@current_user.id != params["id"].to_i)
+      flash[:error] = "You cannot visit that page."
+      redirect_to(user_path(@current_user))
+    end
+  end
+  
 end

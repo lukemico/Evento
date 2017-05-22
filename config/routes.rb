@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  post "/bookings"  => "bookings#create"
+  delete "/bookings" => "bookings#delete"
+
   root "home#index"
 
   get "/login" => "session#new"
@@ -16,4 +19,5 @@ Rails.application.routes.draw do
   get "/next_month" => "pages#next_month"
   resources :users
   resources :events
+  
 end

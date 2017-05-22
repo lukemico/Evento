@@ -1,1 +1,33 @@
-<h1>This is the show page</h1>
+<p id="notice"><%= notice %></p>
+
+<h1>Your profile</h1>
+  <div class="collection">
+    <p class="collection-item">
+      <strong>First name:</strong>
+      <%= @user.first_name %>
+    </p>
+
+    <p class="collection-item">
+      <strong>Last name:</strong>
+      <%= @user.last_name %>
+    </p>
+
+    <p class="collection-item">
+      <strong>Date of Birth:</strong>
+      <%= @user.dob %>
+    </p>
+
+    <p class="collection-item">
+      <strong>Email:</strong>
+      <%= @user.email %>
+    </p>
+
+    <p class="collection-item">
+      <strong>Phone Number:</strong>
+      <%= @user.phone_number %>
+    </p>
+
+  </div>
+
+  <button class="Update" type="submit" name="action"><%= link_to 'Edit', edit_user_path(@user) %></button>
+  <button class="Back" type="submit" name="action"><%= link_to 'Back', root_path %></button>

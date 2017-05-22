@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+
   def new
   end
 
@@ -16,6 +17,8 @@ class EventsController < ApplicationController
 
   def delete
   end
-  
+
+  def destroy
+  end
 
 end

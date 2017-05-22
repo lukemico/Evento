@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   def index
   end
-  
+
   def show
     @user = User.find_by(id: params["id"])
   end
@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   def new
     @user = User.new
   end
-  
+
   def create
     @user = User.new(user_params())
     if @user.save
@@ -19,7 +19,7 @@ class UsersController < ApplicationController
       render :new
     end
   end
-  
+
   def edit
   end
 
@@ -27,5 +27,5 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:first_name, :last_name,
     :email, :dob, :phone_number, :password, :password_confirmation)
-  end 
+  end
 end

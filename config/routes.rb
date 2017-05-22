@@ -1,11 +1,6 @@
 Rails.application.routes.draw do
   get 'pages/staff_picks'
-
   get 'pages/near_me'
-
-  get 'events/new'
-
-  get 'events/show'
 
   root "home#index"
 
@@ -15,4 +10,5 @@ Rails.application.routes.draw do
   get "/register" => "users#new"
 
   resources :users
+  resources :events
 end

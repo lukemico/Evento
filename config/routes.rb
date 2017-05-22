@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get "/staff_picks" => "pages#staff_picks"
-  get "/near_me" => "pages#near_me"
 
   post "/bookings"  => "bookings#create"
   delete "/bookings" => "bookings#delete"
@@ -12,7 +10,14 @@ Rails.application.routes.draw do
   delete "/logout" => "session#destroy"
   get "/register" => "users#new"
 
-  get "/today" => "home#today"
+
+  resources :pages
+  get "/near_me" => "pages#near_me"
+  get "/staff_picks" => "pages#staff_picks"
+  get "/today" => "pages#today"
+  get "/next_week" => "pages#next_week"
+  get "/next_month" => "pages#next_month"
   resources :users
   resources :events
+  
 end

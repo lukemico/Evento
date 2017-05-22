@@ -1,7 +1,35 @@
-<h1>Home Page</h1>
+<h1>Evento</h1>
 
-<h2>Main event</h2>
+<div id="main_event">
+  <!-- <h2>Main event</h2> -->
+  <h3>
+    <%= @main_event.name %>
+  </h3>
 
-<h2>Today</h2>
-<h2>Next Week</h2>
-<h2>Next Month</h2>
+  <p>
+    <%= @main_event.description %>
+  </p>
+
+</div>
+
+<div id="other_events">
+  <ul>
+    <% @events.each do |i| %>
+      <li>
+        <%= link_to(i.name, events_path(i)) %>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+<div id="today">
+  <h4>Today</h4>
+</div>
+
+<div id="next_week">
+  <h4>Next Week</h4>
+</div>
+
+<div id="next_month">
+  <h4>Next Month</h4>
+</div>

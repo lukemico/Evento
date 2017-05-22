@@ -2,10 +2,19 @@ Location.destroy_all
 
 loc1 = Location.create({
   state: "NSW",
-  street: "York Strete",
+  street: "York Street",
   postcode: 2000,
   suburb: "Sydney",
   street_number:"55",
+  country: "Australia"
+})
+
+loc2 = Location.create({
+  state: "NSW",
+  street: "George Street",
+  postcode: 2000,
+  suburb: "The Rocks",
+  street_number:"12",
   country: "Australia"
 })
 
@@ -47,6 +56,16 @@ event2 = Event.create({
   image: "www.iceskate.test",
   event_type_id: type5.id,
   location_id: loc1.id
+})
+
+event3 = Event.create({
+  name: "Bridge Climbing",
+  date: Date.today,
+  cost: 120.00,
+  description: "Climb on the iconic Harbour Bridge!",
+  image: "www.bridgeclimb.test",
+  event_type_id: type5.id,
+  location_id: loc2.id
 })
 
 User.destroy_all
@@ -126,4 +145,3 @@ puts type4.events.first
 
 puts user1.events.first
 puts event2.users.first
-

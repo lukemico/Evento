@@ -16,7 +16,7 @@
   <ul>
     <% @events.each do |i| %>
       <li>
-        <%= link_to(i.name, events_path(i)) %>
+        <%= link_to(i.name, event_path(i.id)) %>
       </li>
     <% end %>
   </ul>

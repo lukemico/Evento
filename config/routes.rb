@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   get 'pages/staff_picks'
-
   get 'pages/near_me'
 
   root "home#index"

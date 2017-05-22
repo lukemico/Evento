@@ -57,7 +57,9 @@ user1 = User.create({
   dob: Date.today,
   email: "simone@ga.co",
   phone_number: "0406 447 446",
-  is_admin: true
+  is_admin: true,
+  password: "chicken",
+  password_confirmation: "chicken"
 })
 
 user2 = User.create({
@@ -66,7 +68,9 @@ user2 = User.create({
   dob: Date.today,
   email: "luke@ga.co",
   phone_number: "0406 447 221",
-  is_admin: true
+  is_admin: true,
+  password: "chicken",
+  password_confirmation: "chicken"
 })
 
 user3 = User.create({
@@ -75,7 +79,9 @@ user3 = User.create({
   dob: Date.today,
   email: "phil@ga.co",
   phone_number: "0406 447 009",
-  is_admin: true
+  is_admin: true,
+  password: "chicken",
+  password_confirmation: "chicken"
 })
 
 user4 = User.create({
@@ -84,7 +90,9 @@ user4 = User.create({
   dob: Date.today,
   email: "bobs@gmail.com",
   phone_number: "0406 447 009",
-  is_admin: false
+  is_admin: false,
+  password: "chicken",
+  password_confirmation: "chicken"
 })
 
 Booking.destroy_all
@@ -109,14 +117,13 @@ booking4 = Booking.create({
   user_id: user4.id
 })
 
-
 # TESTING ASSOCIATIONS
-# puts event1.location.state
-# puts loc1.events.count
+puts event1.location.state
+puts loc1.events.count
 
-# puts event1.event_types.all
-# puts type4.events.count
+puts event1.event_types.first
+puts type4.events.first
 
-# puts user1.events.first
-# puts event2.users.first
+puts user1.events.first
+puts event2.users.first
 

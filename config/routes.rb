@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  get 'pages/staff_picks'
-  get 'pages/near_me'
+  get "/staff_picks" => "pages#staff_picks"
+  get "/near_me" => "pages#near_me"
+
+  post "/bookings"  => "bookings#create"
+  delete "/bookings" => "bookings#delete"
 
   root "home#index"
 

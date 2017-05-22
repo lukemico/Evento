@@ -32,3 +32,6 @@
 <%= link_to 'Edit', edit_user_path(@user), class: "btn btn-default" %>
 <%= link_to 'Back', root_path, class: "btn btn-default" %>
 
+<% if(@user.is_admin == true) %>
+  <%= link_to("Create Event", new_event_path(), class: "btn btn-default")%>
+<% end %>

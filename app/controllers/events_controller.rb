@@ -15,7 +15,7 @@ class EventsController < ApplicationController
     event.save
     redirect_to(event_path(event.id))
   end
-  
+
   def edit
     @event = Event.find_by(id: params["id"])
   end
@@ -27,9 +27,8 @@ class EventsController < ApplicationController
     event.image = cloudinary["url"]
     event.save
   end
-  
-  def destroy
-    
+
+  def delete
   end
 
   private

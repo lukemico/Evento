@@ -111,12 +111,12 @@ booking4 = Booking.create({
 
 
 # TESTING ASSOCIATIONS
-puts event1.location.state
-puts loc1.events.count
+# puts event1.location.state
+# puts loc1.events.count
 
-puts event1.event_type.event_type
-puts type4.events.count
+# puts event1.event_types.all
+# puts type4.events.count
 
-puts user1.events.first.name
-puts event2.users.first.first_name
+# puts user1.events.first
+# puts event2.users.first
 

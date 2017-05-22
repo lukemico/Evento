@@ -42,7 +42,7 @@ class EventsController < ApplicationController
     if(!@current_user)
       flash[:error] = "You cannot view that page."
       redirect_to("/")
-    else (!@current_user.is_admin == true)
+    elsif (!@current_user.is_admin == true)
       flash[:error] = "You cannot view that page."
       redirect_to("/")
     end

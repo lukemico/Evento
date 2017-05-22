@@ -3,10 +3,6 @@ Rails.application.routes.draw do
 
   get 'pages/near_me'
 
-  get 'events/new'
-
-  get 'events/show'
-
   root "home#index"
 
   get "/login" => "session#new"
@@ -15,4 +11,5 @@ Rails.application.routes.draw do
   get "/register" => "users#new"
 
   resources :users
+  resources :events
 end

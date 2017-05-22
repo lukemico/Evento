@@ -1,4 +1,4 @@
-<h1>Register</h1>
+<h1>Sign Up</h1>
 
 <% unless @user.errors.full_messages.empty? %>
     <% @user.errors.full_messages.each do |e| %>
@@ -40,5 +40,5 @@
         <%= f.label :password_confirmation %>
         <%= f.password_field :password_confirmation, required: true, class: "form-control"%>
     </div>
-    <%= f.submit "Register", class: "btn btn-success" %>
+    <%= f.submit "Submit", class: "btn btn-success" %>
 <% end %>

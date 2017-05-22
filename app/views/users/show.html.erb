@@ -29,5 +29,6 @@
 
   </div>
 
-  <button class="Update" type="submit" name="action"><%= link_to 'Edit', edit_user_path(@user) %></button>
-  <button class="Back" type="submit" name="action"><%= link_to 'Back', root_path %></button>
+<%= link_to 'Edit', edit_user_path(@user), class: "btn btn-default" %>
+<%= link_to 'Back', root_path, class: "btn btn-default" %>
+

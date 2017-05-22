@@ -1,13 +1,12 @@
-<h1><%= @event.name %></h1>
+<h1>Event: <%= @event.name %></h1>
 
 <div>
     <p>Date: <%= @event.date.strftime("%A, %d %b %Y %l:%M %p") %> </p>
     <p>Cost: $<%= @event.cost %> </p>
     <p>Description: <%= @event.description %> </p>
-    <p>Image: <img src=<%= @event.image %> > </p>
+    <p>Image: <img src=<%= @event.image %> style="width: 500px"> </p>
     <p>Event Types: </p>
     <% @event.event_types.each do |e| %>
         <p><%= e.event_type %>
     <% end %>
-    
 </div>

@@ -13,7 +13,7 @@ class EventsController < ApplicationController
     event = Event.new(event_params())
     event.image = cloudinary["url"]
     event.save
-    redirect_to(event_path(event))
+    redirect_to(event_path(event.id))
   end
   
   def edit

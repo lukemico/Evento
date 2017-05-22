@@ -1,0 +1,11 @@
+<h1>What's On Today</h1>
+
+<div id="today">
+  <ul>
+    <% @today_event.each do |t| %>
+      <li>
+        <h3><%= link_to(t.name, event_path(t.id) ) %></h3>
+      </li>
+      <% end %>
+  </ul>
+</div>

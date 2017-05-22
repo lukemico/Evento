@@ -14,16 +14,18 @@
 
 <div id="other_events">
   <ul>
-    <% @events.each do |i| %>
+    <% @events.each do |e| %>
       <li>
-        <%= link_to(i.name, event_path(i.id)) %>
+        <%= link_to(e.name, event_path(e.id)) %>
       </li>
     <% end %>
   </ul>
 </div>
 
 <div id="today">
+
   <h4>Today</h4>
+
 </div>
 
 <div id="next_week">

@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+  before_action :check_if_user_is_admin_or_logged_in, only: [:new, :edit, :create, :update, :delete ]
 
   def new
     @event = Event.new
@@ -36,4 +37,15 @@ class EventsController < ApplicationController
   def event_params
     params.require(:event).permit(:name, :date, :cost, :description, :image, :location_id, :event_type_ids => [])
   end
+
+  def check_if_user_is_admin_or_logged_in
+    if(!@current_user)
+      flash[:error] = "You cannot view that page."
+      redirect_to("/")
+    else (!@current_user.is_admin == true)
+      flash[:error] = "You cannot view that page."
+      redirect_to("/")
+    end
+  end
+
 end

@@ -1,6 +1,9 @@
 class SessionController < ApplicationController
+  before_action :authorise, only: [:new]
+  
   def new
   end
+
   def create
     email = params["email"]
     password = params["password"]
@@ -18,6 +21,14 @@ class SessionController < ApplicationController
   def destroy
     session[:user_id] = nil
     redirect_to("/login")
+  end
+
+  private
+  def authorise
+    if(@current_user)
+      flash[:error] = "You are already logged in."
+      redirect_to(user_path(@current_user.id))
+    end
   end
 
 end

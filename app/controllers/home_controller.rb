@@ -7,6 +7,7 @@ class HomeController < ApplicationController
 
     event_name = @main_event.name
     event_description = @main_event.description
+  
   end
 
   def show

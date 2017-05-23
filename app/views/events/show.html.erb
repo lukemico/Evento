@@ -16,3 +16,11 @@
         <p><%= e.event_type %></p>
     <% end %>
 </div>
+
+<h2> Event Map</h2>
+<div id="map"></div>
+
+<script>
+    var latitude = <%= @location.latitude %>;
+    var longitude = <%= @location.longitude %>;
+</script>

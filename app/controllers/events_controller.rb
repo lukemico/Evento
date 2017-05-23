@@ -7,6 +7,7 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find_by(id: params["id"])
+    @location = @event.location
   end
 
   def create
@@ -36,10 +37,6 @@ class EventsController < ApplicationController
   private
   def event_params
     params.require(:event).permit(:name, :date, :cost, :description, :image, :location_id, :event_type_ids => [], location_attributes: [:state, :street, :street_number, :state, :postcode, :suburb])
-  end
-
-  def location_params
-    params.requrie(:location).permit(:country, :street_number, :suburb, :postcode, :state, :street)
   end
 
   def check_if_user_is_admin_or_logged_in

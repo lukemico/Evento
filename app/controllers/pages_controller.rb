@@ -8,6 +8,7 @@ class PagesController < ApplicationController
   end
 
   def near_me
+
   end
 
   def today

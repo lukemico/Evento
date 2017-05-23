@@ -34,7 +34,7 @@ class PagesController < ApplicationController
 
     @month_events = Event.where( "date >= ? AND date <= ?", t, next_month)
 
-# @announcements = Announcement.where("publish = ? AND expires < ?", true, Date.today)
+
 
 
 

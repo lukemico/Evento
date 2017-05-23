@@ -2,20 +2,15 @@
 
 <div id="main_event">
 
-  <h3>
-    <%= @main_event.name %>
-  </h3>
+    <%= link_to(@main_event.image, "/events/#{@main_event.id}") %>
 
-  <p>
-    <%= @main_event.description %>
-  </p>
 </div>
 
 <div id="other_events">
   <ul>
     <% @events.each do |e| %>
       <li>
-        <%= link_to(e.name, event_path(e.id)) %>
+        <%= link_to(e.image, event_path(e.id)) %>
       </li>
     <% end %>
   </ul>
@@ -25,10 +20,10 @@
   <a href="/today">What's On Today</a>
 </div>
 
-<div id="next_week">
-  <a href="/next_week">Next Week</a>
+<div id="this_week">
+  <a href="/this_week">This Week</a>
 </div>
 
-<div id="next_month">
-  <a href="/next_month">Next Month</a>
+<div id="this_month">
+  <a href="/this_month">This Month</a>
 </div>

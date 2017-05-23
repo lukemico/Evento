@@ -630,92 +630,92 @@ booking4 = Booking.create({
 
 EventTypesEvent.destroy_all
 
-event_types_events1 = EventTypesEvents.create({
+event_types_events1 = EventTypesEvent.create({
 event_type_id: type1.id,
 event_id: event18.id
 })
 
-event_types_events2 = EventTypesEvents.create({
+event_types_events2 = EventTypesEvent.create({
 event_type_id: type2.id,
 event_id: event17.id
 })
 
-event_types_event3 = EventTypesEvents.create({
+event_types_event3 = EventTypesEvent.create({
 event_type_id: type3.id,
 event_id: event16.id
 })
 
-event_types_event4 = EventTypesEvents.create({
+event_types_event4 = EventTypesEvent.create({
 event_type_id: type4.id,
 event_id: event15.id
 })
 
-event_types_events5 = EventTypesEvents.create({
+event_types_events5 = EventTypesEvent.create({
 event_type_id: type5.id,
 event_id: event14.id
 })
 
-event_types_events6 = EventTypesEvents.create({
+event_types_events6 = EventTypesEvent.create({
 event_type_id: type5.id,
 event_id: event13.id
 })
 
-event_types_events7 = EventTypesEvents.create({
+event_types_events7 = EventTypesEvent.create({
 event_type_id: type6.id,
 event_id: event12.id
 })
 
-event_types_events8 = EventTypesEvents.create({
+event_types_events8 = EventTypesEvent.create({
 event_type_id: type7.id,
 event_id: event11.id
 })
 
-event_types_events9 = EventTypesEvents.create({
+event_types_events9 = EventTypesEvent.create({
 event_type_id: type8.id,
 event_id: event10.id
 })
 
-event_types_events10 = EventTypesEvents.create({
+event_types_events10 = EventTypesEvent.create({
 event_type_id: type9.id,
 event_id: event9.id
 })
 
-event_types_events11 = EventTypesEvents.create({
+event_types_events11 = EventTypesEvent.create({
 event_type_id: type10.id,
 event_id: event8.id
 })
 
-event_types_events12 = EventTypesEvents.create({
+event_types_events12 = EventTypesEvent.create({
 event_type_id: type1.id,
 event_id: event7.id
 })
 
-event_types_events13 = EventTypesEvents.create({
+event_types_events13 = EventTypesEvent.create({
 event_type_id: type2.id,
 event_id: event6.id
 })
 
-event_types_events14 = EventTypesEvents.create({
+event_types_events14 = EventTypesEvent.create({
 event_type_id: type3.id,
 event_id: event5.id
 })
 
-event_types_events15 = EventTypesEvents.create({
+event_types_events15 = EventTypesEvent.create({
 event_type_id: type4.id,
 event_id: event4.id
 })
 
-event_types_events16 = EventTypesEvents.create({
+event_types_events16 = EventTypesEvent.create({
 event_type_id: type5.id,
 event_id: event3.id
 })
 
-event_types_events17 = EventTypesEvents.create({
+event_types_events17 = EventTypesEvent.create({
 event_type_id: type6.id,
 event_id: event2.id
 })
 
-event_types_events18 = EventTypesEvents.create({
+event_types_events18 = EventTypesEvent.create({
 event_type_id: type7.id,
 event_id: event1.id
 })

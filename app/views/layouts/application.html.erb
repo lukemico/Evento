@@ -4,7 +4,7 @@
     <title>Evento</title>
     <%= csrf_meta_tags %>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -37,5 +37,8 @@
         <%= yield %>
       </main>
     </div>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwTkj64Y-mZqXKjJTsVIT9ETuR3B289tg &callback=initMap"
+  type="text/javascript"></script>
   </body>
 </html>

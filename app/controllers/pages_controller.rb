@@ -8,7 +8,11 @@ class PagesController < ApplicationController
   end
 
   def near_me
-
+  # Hotel.near(”Vancouver, Canada”)
+  # find hotels near Vancouver
+  #
+  # @event.nearbys
+  # find other events near @event
   end
 
   def today

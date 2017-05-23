@@ -1,0 +1,11 @@
+<h3>This Month's Events</h3>
+
+<div id="this_month">
+  <ul>
+    <% @month_events.each do |m| %>
+      <li>
+        <h5><%= link_to(m.image, event_path(m.id) ) %></h5>
+      </li>
+      <% end %>
+  </ul>
+</div>

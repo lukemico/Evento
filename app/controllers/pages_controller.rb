@@ -15,14 +15,28 @@ class PagesController < ApplicationController
 
     @today= Time.now.midnight
 
-    @today_event = Event.where(date: @today)
+    @today_events = Event.where(date: @today)
   end
 
-  def next_week
+  def this_week
+    events = Event.all
+    t = Time.now.midnight
+    next_week = Time.now + 7.days
 
+    @week_events = Event.where( "date >= ? AND date <= ?", t, next_week)
   end
 
-  def next_month
+  def this_month
+    events = Event.all
+    t = Time.now.midnight
+
+    next_month = Time.now + 30.days
+
+    @month_events = Event.where( "date >= ? AND date <= ?", t, next_month)
+
+# @announcements = Announcement.where("publish = ? AND expires < ?", true, Date.today)
+
+
 
   end
 

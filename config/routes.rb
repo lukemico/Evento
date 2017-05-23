@@ -15,9 +15,9 @@ Rails.application.routes.draw do
   get "/near_me" => "pages#near_me"
   get "/staff_picks" => "pages#staff_picks"
   get "/today" => "pages#today"
-  get "/next_week" => "pages#next_week"
-  get "/next_month" => "pages#next_month"
+  get "/this_week" => "pages#this_week"
+  get "/this_month" => "pages#this_month"
   resources :users
   resources :events
-  
+
 end

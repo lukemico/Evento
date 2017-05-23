@@ -223,16 +223,13 @@ Event.destroy_all
 event1 = Event.create({
   name: "GA BootCamp",
   date: Date.today,
-<<<<<<< HEAD
   cost: 100.00,
   description: "The GA coding bootcamp",
   image: "www.test.test",
   # event_type_id: type4.id,
-=======
   cost: 100,
   description: "The GA Code Bootcamp",
   image: "https://unsplash.com/search/digital?photo=j4uuKnN43_M",
->>>>>>> 12941ae3e6baafcbef1a813256c43e717a7431a0
   location_id: loc1.id
 })
 
@@ -241,12 +238,9 @@ event2 = Event.create({
   date: Date.today,
   cost: 20,
   description: "Learn to Iceskate",
-<<<<<<< HEAD
   image: "www.iceskate.test",
   # event_type_id: type5.id,
-=======
   image: "https://unsplash.com/search/ice-skating?photo=pV9_u0zDk4E",
->>>>>>> 12941ae3e6baafcbef1a813256c43e717a7431a0
   location_id: loc1.id
 })
 
@@ -255,10 +249,8 @@ event3 = Event.create({
   date: Date.today,
   cost: 120,
   description: "Climb on the iconic Harbour Bridge!",
-<<<<<<< HEAD
   image: "www.bridgeclimb.test",
   # event_type_id: type5.id,
-=======
   image: "https://unsplash.com/search/sydney-harbour-bridge?photo=_Ehklh_8z9s",
   location_id: loc2.id
 })

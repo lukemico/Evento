@@ -3,4 +3,5 @@ class Event < ApplicationRecord
   belongs_to :location, optional: true
   has_many :bookings
   has_many :users, through: :bookings
+  accepts_nested_attributes_for :location
 end

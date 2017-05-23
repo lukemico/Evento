@@ -8,18 +8,22 @@ class PagesController < ApplicationController
   end
 
   def near_me
+    @users = User.all
+    @event = Event.all
   # Hotel.near(”Vancouver, Canada”)
   # find hotels near Vancouver
-  #
   # @event.nearbys
   # find other events near @event
+    # raise
+  @user_lat = User.latitude
+  @user_lon = User.longitude
+
+  @nearby = restaurants.nearby
   end
 
   def today
     @events = Event.all
-
     @today= Time.now.midnight
-
     @today_events = Event.where(date: @today)
   end
 
@@ -34,7 +38,6 @@ class PagesController < ApplicationController
   def this_month
     events = Event.all
     t = Time.now.midnight
-
     next_month = Time.now + 30.days
 
     @month_events = Event.where( "date >= ? AND date <= ?", t, next_month)

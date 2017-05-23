@@ -34,6 +34,30 @@
             </p>
         <% end %>
     </div>
+
+    <h2>Event Location</h2>
+    <%= f.fields_for :location, Location.new do |lf|%>
+        <div class="form-group">
+            <%= lf.label :street_number %>
+            <%= lf.number_field :street_number, class: "form-control" %>
+        </div>
+        <div class="form-group">
+            <%= lf.label :street %>
+            <%= lf.text_field :street, class: "form-control" %>
+        </div>
+        <div class="form-group">
+            <%= lf.label :postcode %>
+            <%= lf.number_field :postcode, class: "form-control" %>
+        </div>
+        <div class="form-group">
+            <%= lf.label :suburb %>
+            <%= lf.text_field :suburb, class: "form-control" %>
+        </div>
+        <div class="form-group">
+            <%= lf.label :state %>
+            <%= lf.select :state, ["NSW", "VIC", "TAS", "SA", "WA", "NT", "QLD", "ACT"], class: "form-control" %>
+        </div>
+    <% end %>
     <%= f.submit("Create", class: "btn btn-success") %>
 <% end %>
     

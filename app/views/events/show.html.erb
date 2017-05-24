@@ -7,7 +7,7 @@
     <% end %>
 <% end %>
 <div>
-    <p>Date: <%= @event.date.strftime("%A, %d %b %Y %l:%M %p") %> </p>
+    <p>Date: <%= @event.date %> </p>
     <p>Cost: $<%= @event.cost %> </p>
     <p>Description: <%= @event.description %> </p>
     <p>Image: <img src=<%= @event.image %> style="width: 500px"> </p>

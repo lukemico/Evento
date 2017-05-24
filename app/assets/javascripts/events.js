@@ -13,3 +13,9 @@ var initMap = function() {
     });
 };
 
+$(document).ready(function () {
+    $("#datepicker").kendoDateTimePicker({
+        format: "yyyy/MM/dd HH:mm"
+    });
+});
+

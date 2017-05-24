@@ -5,5 +5,4 @@ class User < ApplicationRecord
 
   # geocoded_by :ip_adress
   # after_validation :geocode
-  #
 end

@@ -225,10 +225,7 @@ event1 = Event.create({
   date: Date.today,
   cost: 100.00,
   description: "The GA coding bootcamp",
-  image: "www.test.test",
   # event_type_id: type4.id,
-  cost: 100,
-  description: "The GA Code Bootcamp",
   image: "https://unsplash.com/search/digital?photo=j4uuKnN43_M",
   location_id: loc1.id
 })
@@ -238,7 +235,6 @@ event2 = Event.create({
   date: Date.today,
   cost: 20,
   description: "Learn to Iceskate",
-  image: "www.iceskate.test",
   # event_type_id: type5.id,
   image: "https://unsplash.com/search/ice-skating?photo=pV9_u0zDk4E",
   location_id: loc1.id
@@ -249,7 +245,6 @@ event3 = Event.create({
   date: Date.today,
   cost: 120,
   description: "Climb on the iconic Harbour Bridge!",
-  image: "www.bridgeclimb.test",
   # event_type_id: type5.id,
   image: "https://unsplash.com/search/sydney-harbour-bridge?photo=_Ehklh_8z9s",
   location_id: loc2.id
@@ -387,15 +382,11 @@ event18 = Event.create({
   cost: 30,
   description: "Discover how easy it is to get to Sydney’s best markets by bike and do a spot of local shopping on the way.",
   image: "https://unsplash.com/search/bike-ride?photo=v0TfIt-S6-o",
->>>>>>> 12941ae3e6baafcbef1a813256c43e717a7431a0
   location_id: loc2.id
 })
 
 
-<<<<<<< HEAD
 # User's IP address: 202.171.181.44
-=======
->>>>>>> 12941ae3e6baafcbef1a813256c43e717a7431a0
 User.destroy_all
 
 user1 = User.create({

@@ -223,8 +223,9 @@ Event.destroy_all
 event1 = Event.create({
   name: "GA BootCamp",
   date: Date.today,
-  cost: 100,
-  description: "The GA Code Bootcamp",
+  cost: 100.00,
+  description: "The GA coding bootcamp",
+  # event_type_id: type4.id,
   image: "https://unsplash.com/search/digital?photo=j4uuKnN43_M",
   location_id: loc1.id
 })
@@ -234,6 +235,7 @@ event2 = Event.create({
   date: Date.today,
   cost: 20,
   description: "Learn to Iceskate",
+  # event_type_id: type5.id,
   image: "https://unsplash.com/search/ice-skating?photo=pV9_u0zDk4E",
   location_id: loc1.id
 })
@@ -243,6 +245,7 @@ event3 = Event.create({
   date: Date.today,
   cost: 120,
   description: "Climb on the iconic Harbour Bridge!",
+  # event_type_id: type5.id,
   image: "https://unsplash.com/search/sydney-harbour-bridge?photo=_Ehklh_8z9s",
   location_id: loc2.id
 })
@@ -383,6 +386,7 @@ event18 = Event.create({
 })
 
 
+# User's IP address: 202.171.181.44
 User.destroy_all
 
 user1 = User.create({
@@ -404,7 +408,8 @@ user2 = User.create({
   phone_number: "0406 447 221",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+
 })
 
 user3 = User.create({

@@ -3,7 +3,8 @@
 <div id="today">
   <ul>
     <% @today_events.each do |t| %>
-        <h5><%= link_to(t.image, event_path(t.id) ) %></h5>
+        <%= image_tag t.image %>
+        <h5><%= link_to(t.name, event_path(t.id) ) %></h5>
         <!-- this will show the image associated with the event (current a non-working link) -->
       <% end %>
   </ul>

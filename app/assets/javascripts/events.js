@@ -12,3 +12,10 @@ var initMap = function() {
         map: map
     });
 };
+
+$(document).ready(function () {
+    $("#datepicker").kendoDateTimePicker({
+        format: "yyyy/MM/dd HH:mm"
+    });
+});
+  

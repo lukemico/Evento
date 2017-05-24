@@ -1,9 +1,10 @@
 <h3>This Month's Events</h3>
 
 <div class="row">
-    <% @month_events.each do |m| %>
-      <div class="col-md-3">
-        <%= link_to(image_tag(m.image), event_path(m.id) ) %>
-      </div>
-    <% end %>
+  <% @month_events.each do |m| %>
+    <div class="col-xs-6 col-md-4">
+      <%= link_to(image_tag(m.image, style: "width: 300px; height: 200px; margin: 5px;", class: "img-responsive"), event_path(m.id) ) %>
+    </div>
+  <% end %>
+  <hr>
 </div>

@@ -3,7 +3,8 @@
 <div class="row">
   <% @week_events.each do |w| %>
     <div class="col-xs-6 col-md-4">
-      <%= link_to(image_tag(w.image), event_path(w.id) ) %>
+      <%= link_to(image_tag(w.image, style: "width: 300px; height: 200px; margin: 5px;", class: "img-responsive"), event_path(w.id) ) %>
     </div>
   <% end %>
+  <hr>
 </div>

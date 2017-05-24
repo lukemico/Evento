@@ -35,3 +35,20 @@
 <% if(@user.is_admin == true) %>
   <%= link_to("Create Event", new_event_path(), class: "btn btn-default")%>
 <% end %>
+
+<hr>
+<h2>Your Events</h2>
+<ul>
+  <% @bookings.each do |b| %>
+  <li>
+    <%= link_to(b.name, event_path(b.id)) %> |
+
+    <%= form_tag("/bookings", method: :delete) do%>
+        <%= hidden_field_tag "event_id", :event_id, :value => b.id %>
+        <%= submit_tag("Remove Booking", class: "btn btn-primary")%>
+    <% end %>
+    
+  </li>
+  <% end %>
+
+</ul>

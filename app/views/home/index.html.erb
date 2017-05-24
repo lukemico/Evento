@@ -1,8 +1,9 @@
 <h1>Evento</h1>
 
 <div id="main_event">
-    <%= link_to(@main_event.image, "/events/#{@main_event.id}") %>
+    <%= link_to(image_tag(@main_event.image, style: "width: 1000px", class: "img-responsive"), event_path(@main_event.id)) %>
 </div>
+<hr>
 
 <div id="other_events">
     <% @events.each do |e| %>

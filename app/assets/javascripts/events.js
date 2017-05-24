@@ -1,7 +1,7 @@
 // ------ GOOGLE MAP TRACKING -------
 var initMap = function() {
     var event = {lat: latitude, lng: longitude};
-    
+
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
         center: event
@@ -18,4 +18,4 @@ $(document).ready(function () {
         format: "yyyy/MM/dd HH:mm"
     });
 });
-
+  

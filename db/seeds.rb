@@ -404,7 +404,8 @@ user1 = User.create({
   phone_number: "0406 447 446",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user2 = User.create({
@@ -416,7 +417,7 @@ user2 = User.create({
   is_admin: true,
   password: "chicken",
   password_confirmation: "chicken",
-
+  ip_address: "202.171.181.44"
 })
 
 user3 = User.create({
@@ -427,7 +428,8 @@ user3 = User.create({
   phone_number: "0406 447 009",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user4 = User.create({
@@ -438,7 +440,8 @@ user4 = User.create({
   phone_number: "0406 447 009",
   is_admin: false,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user5 = User.create({
@@ -449,7 +452,8 @@ user5 = User.create({
   phone_number: "0413 547 446",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user6 = User.create({
@@ -460,7 +464,8 @@ user6 = User.create({
   phone_number: "0410 647 446",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user7 = User.create({
@@ -471,7 +476,8 @@ user7 = User.create({
   phone_number: "0411 147 446",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user8 = User.create({
@@ -482,7 +488,8 @@ user8 = User.create({
   phone_number: "0426 547 446",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user9 = User.create({
@@ -493,7 +500,8 @@ user9 = User.create({
   phone_number: "0483 517 446",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user10 = User.create({
@@ -504,7 +512,8 @@ user10 = User.create({
   phone_number: "0438 947 146",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user11 = User.create({
@@ -515,7 +524,8 @@ user11 = User.create({
   phone_number: "0423 247 226",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user12 = User.create({
@@ -526,7 +536,8 @@ user12 = User.create({
   phone_number: "0443 747 226",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user13 = User.create({
@@ -537,7 +548,8 @@ user13 = User.create({
   phone_number: "0453 247 226",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user14 = User.create({
@@ -548,7 +560,8 @@ user14 = User.create({
   phone_number: "0433 247 226",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user15 = User.create({
@@ -559,7 +572,8 @@ user15 = User.create({
   phone_number: "0453 647 226",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user16 = User.create({
@@ -570,7 +584,8 @@ user16 = User.create({
   phone_number: "0422 247 226",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user17 = User.create({
@@ -581,7 +596,8 @@ user17 = User.create({
   phone_number: "0455 247 226",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user18 = User.create({
@@ -592,7 +608,8 @@ user18 = User.create({
   phone_number: "0444 247 226",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user19 = User.create({
@@ -603,7 +620,8 @@ user19 = User.create({
   phone_number: "0499 247 226",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 user20 = User.create({
@@ -614,7 +632,8 @@ user20 = User.create({
   phone_number: "0488 247 226",
   is_admin: true,
   password: "chicken",
-  password_confirmation: "chicken"
+  password_confirmation: "chicken",
+  ip_address: "202.171.181.44"
 })
 
 Booking.destroy_all

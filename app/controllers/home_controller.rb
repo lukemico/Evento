@@ -2,12 +2,8 @@ class HomeController < ApplicationController
 
   def index
     @events = Event.all
-
+    @three_events = @events.sample(3)
     @main_event = Event.all.first
-
-    event_name = @main_event.name
-    event_description = @main_event.description
-
   end
 
   def show

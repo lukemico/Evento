@@ -1,32 +1,33 @@
 <h1>Evento</h1>
 
-<div id="main_event">
-    <%= link_to(image_tag(@main_event.image, style: "width: 1000px", class: "img-responsive"), event_path(@main_event.id)) %>
-</div>
+<section>
+  <div class="row main-event">
+    <div class="col-md-12">
+        <%= link_to(image_tag(@main_event.image, class: "img-responsive"), event_path(@main_event.id)) %>
+    </div>
+  </div>
+</section>
+
 <hr>
 
 <section>
-
   <div class="row">
     <div class="col-md-4">
-      <%= link_to("Whats on Today", "/today") %>
+      <%= link_to("Whats on Today", "/today", class: "event-times") %>
     </div>
     <div class="col-md-4">
-      <%= link_to("This week", "/this_week") %>
+      <%= link_to("This week", "/this_week", class: "event-times") %>
     </div>
     <div class="col-md-4">
-      <%= link_to("This Month", "/this_month") %>
+      <%= link_to("This Month", "/this_month", class: "event-times") %>
     </div>
-
   </div>
 
-
   <div class="row">
-    <% @events.each do |e| %>
+    <% @three_events.each do |e| %>
     <div class="col-xs-6 col-md-4">
       <%= link_to(image_tag(e.image, style: "width: 300px; height: 200px; margin: 5px;"), event_path(e.id)) %>
     </div>
     <% end %>
   </div>
-
 </section>

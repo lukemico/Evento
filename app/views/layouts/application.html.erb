@@ -4,25 +4,25 @@
     <title>Evento</title>
     <%= csrf_meta_tags %>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <div class="container">
-      <nav class="navbar navbar-inverse">
+      <nav class="navbar">
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="/">Eventö</a>
           </div>
           <ul class="nav navbar-nav navbar-right">
             <% if(@current_user) %>
-              <li><%= link_to("Logout", "/logout", method: :delete) %></li>
-              <li><%= link_to(@current_user.email, user_path(@current_user)) %></li>
-              <li><%= link_to("Edit Profile", edit_user_path(@current_user))%></li>
+              <li><a href="/users/<%=@current_user.id %>"> <%=@current_user.email%> <i class="fa fa-user-circle-o"></i></a></li>
+              <li><a href="/users/<%=@current_user.id %>/edit">Edit Profile <i class="fa fa-pencil"></i></a></li>
+              <li><a rel="nofollow" data-method="delete" href="/logout">Logout <i class="fa fa-sign-out"></i></a></li>
             <% else %>
-              <li><%= link_to("Login", "/login") %></li>
-              <li><%= link_to("Sign Up", "/register") %></li>
+              <li><a href="/login">Login <i class="fa fa-sign-in"></i></a></li>
+              <li><a href="/register">Register <i class="fa fa-user-plus"></i></a> </li>
             <% end %>
           </ul>
           <ul class="nav navbar-nav">
@@ -32,11 +32,10 @@
         </div>
       </nav>
 
-      <main class="jumbotron">
+      <main class="container">
         <p class="text-danger"><%= flash[:error] %></p>
         <%= yield %>
       </main>
-    </div>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwTkj64Y-mZqXKjJTsVIT9ETuR3B289tg &callback=initMap"
   type="text/javascript"></script>

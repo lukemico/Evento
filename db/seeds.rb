@@ -226,7 +226,7 @@ event1 = Event.create({
   cost: 100.00,
   description: "The GA coding bootcamp",
   # event_type_id: type4.id,
-  image: "https://unsplash.com/search/digital?photo=j4uuKnN43_M",
+  image: "http://fillmurray.com/200/200",
   location_id: loc1.id
 })
 
@@ -236,7 +236,7 @@ event2 = Event.create({
   cost: 20,
   description: "Learn to Iceskate",
   # event_type_id: type5.id,
-  image: "https://unsplash.com/search/ice-skating?photo=pV9_u0zDk4E",
+  image: "http://fillmurray.com/200/200",
   location_id: loc1.id
 })
 
@@ -246,7 +246,7 @@ event3 = Event.create({
   cost: 120,
   description: "Climb on the iconic Harbour Bridge!",
   # event_type_id: type5.id,
-  image: "https://unsplash.com/search/sydney-harbour-bridge?photo=_Ehklh_8z9s",
+  image: "http://fillmurray.com/200/200",
   location_id: loc2.id
 })
 
@@ -255,7 +255,7 @@ event4 = Event.create({
   date: Date.today,
   cost: 89,
   description: "Vivid Sydney is back to light up our city from 26 May to 17 June!",
-  image: "https://unsplash.com/search/light-show?photo=h7l0D5An8II",
+  image: "http://fillmurray.com/200/200",
   location_id: loc6.id
 })
 
@@ -264,7 +264,7 @@ event5 = Event.create({
   date: Date.today,
   cost: 120,
   description: "Evolving a Tasty Niche is in response to the global phenomenon of creative food careers, from food photography, cake design, dining, to food art, fueled by the power of social media. It is a world injected with robust, novel energy everyday. Today’s niche easily becomes tomorrow’s cliché.",
-  image: "https://unsplash.com/collections/370149/taste",
+  image: "http://fillmurray.com/200/200",
   location_id: loc8.id
 })
 
@@ -273,7 +273,7 @@ event6 = Event.create({
   date: Date.today + 1.days,
   cost: 90,
   description: "A one-off line-up of Sydney bands for an inner-west music and shopping extravaganza.",
-  image: "https://unsplash.com/search/music?photo=ekQ62fABSV4",
+  image: "http://fillmurray.com/200/200",
   location_id: loc19.id
 })
 
@@ -282,7 +282,7 @@ event7 = Event.create({
   date: Date.today + 2.days,
   cost: 25,
   description: "For a cost of $25, you’ll be able to enjoy a 60 minute yoga class, followed by a half pint of your favourite craft beer from the guys at Rocks Brewing.",
-  image: "https://unsplash.com/search/yoga?photo=hOj3-0lTK8E",
+  image: "http://fillmurray.com/200/200",
   location_id: loc3.id
 })
 
@@ -291,7 +291,7 @@ event8 = Event.create({
   date: Date.today + 3.days,
   cost: 40,
   description: "Add a of spice to your visit to this fantastic Museum and challenge yourself in this short and quirky trail!",
-  image: "https://unsplash.com/search/hunt?photo=Hec0skqVccQ",
+  image: "http://fillmurray.com/200/200",
   location_id: loc4.id
 })
 
@@ -300,7 +300,7 @@ event9 = Event.create({
   date: Date.today  + 4.days,
   cost: 180,
   description: "Join us for the World Whisky Dinner at Osaka Trading Co., located at Tramsheds Harold Park.",
-  image: "https://unsplash.com/search/dinner?photo=QlnUpMED6Qs",
+  image: "http://fillmurray.com/200/200",
   location_id: loc6.id
 })
 
@@ -309,7 +309,7 @@ event10 = Event.create({
   date: Date.today + 5.days,
   cost: 65,
   description: "Captivated with a whole new way of seeing the world through a lens! ArtSHINE Gallery is working with Head on Photo Festival, the largest festival in Sydney for photography!",
-  image: "https://unsplash.com/search/astronomy?photo=mwWJul4WkqU",
+  image: "http://fillmurray.com/200/200",
   location_id: loc7.id
 })
 
@@ -318,7 +318,7 @@ event11 = Event.create({
   date: Date.today  + 6.days,
   cost: 45,
   description: "Get results and get sweaty. High-intensity cardio and functional training to burn body fat and boost your fitness.",
-  image: "https://unsplash.com/search/photos/fitness?photo=lrjhGUSESGk",
+  image: "http://fillmurray.com/200/200",
   location_id: loc8.id
 })
 
@@ -327,7 +327,7 @@ event12 = Event.create({
   date: Date.today + 7.days,
   cost: 55,
   description: "Sydney's hottest comedy venue!",
-  image: "https://unsplash.com/search/live?photo=VlxZ6nx16HE",
+  image: "http://fillmurray.com/200/200",
   location_id: loc9.id
 })
 
@@ -336,7 +336,7 @@ event13 = Event.create({
   date: Date.today + 8.days,
   cost: 42,
   description: "Learn the instrument with a talented teacher in a relaxed environment",
-  image: "https://unsplash.com/search/drum?photo=vOBnbyzA_XA",
+  image: "http://fillmurray.com/200/200",
   location_id: loc10.id
 })
 
@@ -345,7 +345,7 @@ event14 = Event.create({
   date: Date.today + 9.days,
   cost: 42,
   description: "In Sydney for the first time ever. Journey into the heart of the Titanic and experience the world’s largest and most comprehensive exhibition about this iconic ship. Immerse yourself in the moving tale of Titanic’s first and final voyage and experience the sights, sounds and stories as if you were on the ship.",
-  image: "https://unsplash.com/search/ship?photo=4y4pTj-9phI",
+  image: "http://fillmurray.com/200/200",
   location_id: loc11.id
 })
 
@@ -354,7 +354,7 @@ event15 = Event.create({
   date: Date.today + 7.days,
   cost: 120,
   description: "An unnervingly dark and vulgar investigation of the human condition.",
-  image: "https://unsplash.com/search/gallery?photo=xJXxMR5PXoY",
+  image: "http://fillmurray.com/200/200",
   location_id: loc12.id
 })
 
@@ -363,7 +363,7 @@ event16 = Event.create({
   date: Date.today + 8.days,
   cost: 10,
   description: "Two-week festival celebrating the best of Pyrmont and the Mudgee region",
-  image: "https://unsplash.com/collections/542704/camping-and-festivals?photo=S_VbdMTsdiA",
+  image: "http://fillmurray.com/200/200",
   location_id: loc2.id
 })
 
@@ -372,7 +372,7 @@ event17 = Event.create({
   date: Date.today,
   cost: 142,
   description: "Best showcase of independent cinema from the States in Australia!!",
-  image: "https://unsplash.com/collections/781962/mystate-film-fest?photo=IpLa37Uj2Dw",
+  image: "http://fillmurray.com/200/200",
   location_id: loc20.id
 })
 
@@ -381,7 +381,7 @@ event18 = Event.create({
   date: Date.today,
   cost: 30,
   description: "Discover how easy it is to get to Sydney’s best markets by bike and do a spot of local shopping on the way.",
-  image: "https://unsplash.com/search/bike-ride?photo=v0TfIt-S6-o",
+  image: "http://fillmurray.com/200/200",
   location_id: loc2.id
 })
 

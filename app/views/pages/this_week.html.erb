@@ -1,12 +1,9 @@
 <h3>This Week's Events</h3>
-<h4>What's On This Week</h4>
 
-<div id="this_week">
-  <ul>
-    <% @week_events.each do |w| %>
-      <li>
-        <h5><%= link_to(w.image, event_path(w.id) ) %></h5>
-      </li>
-      <% end %>
-  </ul>
+<div class="row">
+  <% @week_events.each do |w| %>
+    <div class="col-md-3">
+      <%= link_to(image_tag(w.image), event_path(w.id) ) %>
+    </div>
+  <% end %>
 </div>

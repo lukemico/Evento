@@ -7,6 +7,7 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find_by(id: params["id"])
+    @num_of_ppl = @event.users.count()
     @location = @event.location
   end
 

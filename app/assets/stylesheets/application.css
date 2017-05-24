@@ -13,6 +13,7 @@
  *= require_self
  *= require events.scss
  *= require users.scss
+ *= require pages.scss
  *= require kendo/kendo.common.min.css
  *= require kendo/kendo.default.min.css
  */

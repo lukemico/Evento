@@ -5,17 +5,6 @@ class UsersController < ApplicationController
 
   before_action :check_if_same_user, only: [:show, :edit]
 
-  def index
-  end
-
-  def show
-    @user = User.find_by(id: params["id"])
-  end
-
-  def new
-    @user = User.new
-  end
-
   # POST /users
   def create
     @user = User.new(user_params())
@@ -27,13 +16,10 @@ class UsersController < ApplicationController
     end
   end
 
-  # GET /users
-  def index
-  end
-
   # GET /users/1
   def show
     @user = User.find_by(id: params["id"])
+    @bookings = @user.events
   end
 
   # GET /users/new
@@ -70,7 +56,7 @@ class UsersController < ApplicationController
     if(@current_user)
       flash[:error] = "You are already logged in."
       redirect_to(user_path(session[:user_id]))
-    end 
+    end
   end
 
   def check_if_logged_in
@@ -86,5 +72,5 @@ class UsersController < ApplicationController
       redirect_to(user_path(@current_user))
     end
   end
-  
+
 end

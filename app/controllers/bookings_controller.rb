@@ -12,16 +12,20 @@ class BookingsController < ApplicationController
       booking = Booking.create({
         event_id: params["event_id"],
         user_id: @current_user.id
-      })   
+      })
       if (booking.save)
         flash[:success] = "You successfully signed up to the event"
         redirect_to(user_path(@current_user.id))
       end
     end
   end
-  
+
   def delete
+    booking = Booking.find_by(event_id: params["event_id"].to_i)
+    booking.destroy
+    redirect_to(user_path(@current_user.id))
   end
+
 
   private
   def booking_params

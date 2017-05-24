@@ -4,10 +4,12 @@ class PagesController < ApplicationController
   end
 
   def staff_picks
+    @events = Event.all
+    @three_events = @events.sample(3)
   end
+
   def near_me
     event_locations = []
-    # Get a user's location
     user_ip = @current_user.ip_address
 
     Event.all.each do |i|
@@ -21,30 +23,6 @@ class PagesController < ApplicationController
         @near_by_events.push([i.latitude.to_f, i.longitude.to_f])
       end
     end
-
-    # raise "hell"
-    # Compare to all events
-    #   find any that are below threshold
-    #
-    #   for eaach that meets that => []
-
-    # Geocoder::Calculations.distance_between( address1, address2 ) => Distance in mile
-
-
-
-
-
-  #   @users = User.all
-  #   @event = Event.all
-  # # Hotel.near(”Vancouver, Canada”)
-  # # find hotels near Vancouver
-  # @event.nearbys
-  # # find other events near @event
-  #   # raise
-  # @user_lat = User.latitude
-  # @user_lon = User.longitude
-  #
-  # # @nearby = restaurants.nearby
   end
 
   def today

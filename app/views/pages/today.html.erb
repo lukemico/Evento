@@ -1,6 +1,6 @@
 <h1>What's On Today</h1>
 
-<div id="today">
+<div class="row">
     <% @today_events.each do |t| %>
       <div class="col-xs-6 col-md-4">
         <%= link_to(image_tag(t.image, style: "width: 300px; height: 200px; margin: 5px;", class: "img-responsive"), event_path(t.id)) %>

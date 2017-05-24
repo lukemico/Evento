@@ -5,21 +5,28 @@
 </div>
 <hr>
 
-<div id="other_events">
+<section>
+
+  <div class="row">
+    <div class="col-md-4">
+      <%= link_to("Whats on Today", "/today") %>
+    </div>
+    <div class="col-md-4">
+      <%= link_to("This week", "/this_week") %>
+    </div>
+    <div class="col-md-4">
+      <%= link_to("This Month", "/this_month") %>
+    </div>
+
+  </div>
+
+
+  <div class="row">
     <% @events.each do |e| %>
-      <%= link_to(image_tag(e.image, style: "width: 200px"), event_path(e.id)) %>
-      <hr>
+    <div class="col-xs-6 col-md-4">
+      <%= link_to(image_tag(e.image, style: "width: 300px; height: 200px; margin: 5px;"), event_path(e.id)) %>
+    </div>
     <% end %>
-</div>
+  </div>
 
-<div id="today">
-  <a href="/today">What's On Today</a>
-</div>
-
-<div id="this_week">
-  <a href="/this_week">This Week</a>
-</div>
-
-<div id="this_month">
-  <a href="/this_month">This Month</a>
-</div>
+</section>

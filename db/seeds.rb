@@ -352,7 +352,7 @@ event15 = Event.create({
   date: Date.today + 7.days,
   cost: 120,
   description: "An unnervingly dark and vulgar investigation of the human condition.",
-  image: "http://fillmurray.com/200/200",
+  image: "https://images.unsplash.com/photo-1432835305417-6919779246b4?dpr=2&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop=&bg=",
   location_id: loc12.id
 })
 
@@ -367,7 +367,7 @@ event16 = Event.create({
 
 event17 = Event.create({
   name: "American Essentials Film Festival",
-  date: Date.today,
+  date: Date.today + 40.days,
   cost: 142,
   description: "Best showcase of independent cinema from the States in Australia!!",
   image: "https://images.unsplash.com/photo-1483081979849-4367277fb4d8?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=1000&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
@@ -376,22 +376,12 @@ event17 = Event.create({
 
 event18 = Event.create({
   name: "Market Crawl by Bike",
-  date: Date.today,
+  date: Date.today + 32.days,
   cost: 30,
   description: "Discover how easy it is to get to Sydney’s best markets by bike and do a spot of local shopping on the way.",
   image: "https://images.unsplash.com/photo-1438183972690-6d4658e3290e?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=1125&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc2.id
 })
-
-event19 = Event.create({
-  name: "Bill Murray Presents:",
-  date: Date.today,
-  cost: 550,
-  description: "Code Code Code - code your way to greatness with Bill Murray and Jack Jeffress.",
-  image: "http://yesofcorsa.com/wp-content/uploads/2016/12/Bill-Murray-Wallpaper-High-Definition-1024x576.jpg",
-  location_id: loc2.id
-})
-
 
 # User's IP address: 202.171.181.44
 User.destroy_all

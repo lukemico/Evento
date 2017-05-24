@@ -3,23 +3,9 @@
     <div class="col-md-12">
         <%= link_to(image_tag(@main_event.image, class: "img-responsive"), event_path(@main_event.id)) %>
     </div>
-
 </section>
-
 <hr>
-
 <section>
-  <div class="row">
-    <div class="col-md-4">
-      <%= link_to("Whats on Today", "/today", class: "event-times") %>
-    </div>
-    <div class="col-md-4">
-      <%= link_to("This week", "/this_week", class: "event-times") %>
-    </div>
-    <div class="col-md-4">
-      <%= link_to("This Month", "/this_month", class: "event-times") %>
-    </div>
-  </div>
 
   <div class="row">
     <% @three_events.each do |e| %>

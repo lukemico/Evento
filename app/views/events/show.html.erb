@@ -1,4 +1,18 @@
 <h1>Event: <%= @event.name %></h1>
+<img src=<%= @event.image %> style="width: 500px">
+
+<div>
+    <p>There are <%= @num_of_ppl %> people going to this event</p>
+    <p>Date: <%= @event.date %> </p>
+    <p>Cost: $<%= @event.cost %> </p>
+    <p>Description: <%= @event.description %> </p>
+    <p>Event Types: </p>
+    <ul>
+    <% @event.event_types.each do |e| %>
+        <li><%= e.event_type %></li>
+    <% end %>
+    </ul>
+</div>
 
 <% if(@current_user) %>
     <%= form_tag("/bookings", method: :post) do%>
@@ -6,19 +20,8 @@
         <%= submit_tag("Sign up", class: "btn btn-primary")%>
     <% end %>
 <% end %>
-<div>
-    <p>There are <%= @num_of_ppl %> people going to this event</p>
-    <p>Date: <%= @event.date %> </p>
-    <p>Cost: $<%= @event.cost %> </p>
-    <p>Description: <%= @event.description %> </p>
-    <p>Image: <img src=<%= @event.image %> style="width: 500px"> </p>
-    <p>Event Types: </p>
-    <% @event.event_types.each do |e| %>
-        <p><%= e.event_type %></p>
-    <% end %>
-</div>
 
-<h2> Event Map</h2>
+<h2>Event Map</h2>
 <div id="map"></div>
 
 <script>

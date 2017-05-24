@@ -90,7 +90,6 @@ loc10= Location.create({
   country: "Australia"
 })
 
-
 loc11= Location.create({
   state: "NSW",
   street: "Conservatorium Road",
@@ -99,7 +98,6 @@ loc11= Location.create({
   street_number:"1",
   country: "Australia"
 })
-
 
 loc12= Location.create({
   state: "NSW",
@@ -224,9 +222,9 @@ event1 = Event.create({
   name: "GA BootCamp",
   date: Date.today,
   cost: 100.00,
-  description: "The GA coding bootcamp",
+  description: "The GA Coding Bootcamp",
   # event_type_id: type4.id,
-  image: "http://fillmurray.com/200/200",
+  image: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?dpr=1&amp;auto=compress,format&amp;fit=crop&amp;w=767&amp;h=511&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc1.id
 })
 
@@ -236,7 +234,7 @@ event2 = Event.create({
   cost: 20,
   description: "Learn to Iceskate",
   # event_type_id: type5.id,
-  image: "http://fillmurray.com/200/200",
+  image:"https://images.unsplash.com/photo-1448716061616-5856dfdb900e?dpr=1&amp;auto=compress,format&amp;fit=crop&amp;w=568&amp;h=379&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc1.id
 })
 
@@ -244,9 +242,9 @@ event3 = Event.create({
   name: "Bridge Climbing",
   date: Date.today,
   cost: 120,
-  description: "Climb on the iconic Harbour Bridge!",
+  description: "Climb on the iconic Harbour Bridge! Just don't fall off",
   # event_type_id: type5.id,
-  image: "http://fillmurray.com/200/200",
+  image: "https://images.unsplash.com/photo-1447953649934-e82a2f5a11f4?dpr=1&amp;auto=compress,format&amp;fit=crop&amp;w=568&amp;h=379&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc2.id
 })
 
@@ -254,8 +252,8 @@ event4 = Event.create({
   name: "VIVID Sydney",
   date: Date.today,
   cost: 89,
-  description: "Vivid Sydney is back to light up our city from 26 May to 17 June!",
-  image: "http://fillmurray.com/200/200",
+  description: "VIVID Sydney is back to light up our city from 26 May to 17 June!",
+  image: "https://images.unsplash.com/photo-1466903001289-713a94ef08df?dpr=1&amp;auto=compress,format&amp;fit=crop&amp;w=568&amp;h=379&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc6.id
 })
 
@@ -264,7 +262,7 @@ event5 = Event.create({
   date: Date.today,
   cost: 120,
   description: "Evolving a Tasty Niche is in response to the global phenomenon of creative food careers, from food photography, cake design, dining, to food art, fueled by the power of social media. It is a world injected with robust, novel energy everyday. Today’s niche easily becomes tomorrow’s cliché.",
-  image: "http://fillmurray.com/200/200",
+  image: "https://images.unsplash.com/reserve/DHHQbqc0RrWVf0uDNe5E_The%20Litte%20Cafe.jpg?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=844&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc8.id
 })
 
@@ -273,7 +271,7 @@ event6 = Event.create({
   date: Date.today + 1.days,
   cost: 90,
   description: "A one-off line-up of Sydney bands for an inner-west music and shopping extravaganza.",
-  image: "http://fillmurray.com/200/200",
+  image: "https://images.unsplash.com/photo-1446057032654-9d8885db76c6?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=937&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc19.id
 })
 
@@ -281,17 +279,17 @@ event7 = Event.create({
   name: "Brewhouse Shala yoga",
   date: Date.today + 2.days,
   cost: 25,
-  description: "For a cost of $25, you’ll be able to enjoy a 60 minute yoga class, followed by a half pint of your favourite craft beer from the guys at Rocks Brewing.",
-  image: "http://fillmurray.com/200/200",
+  description: "For a cost of only $25, you’ll be able to enjoy a 60 minute yoga class, followed by a half pint of your favourite craft beer from the guys at Rocks Brewing.",
+  image: "https://images.unsplash.com/photo-1473022082832-5a30701d4f2c?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=1000&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc3.id
 })
 
 event8 = Event.create({
-  name: "Museum of Sydney scavenger hunt",
+  name: "Museum of Sydney Scavenger Hunt",
   date: Date.today + 3.days,
   cost: 40,
   description: "Add a of spice to your visit to this fantastic Museum and challenge yourself in this short and quirky trail!",
-  image: "http://fillmurray.com/200/200",
+  image: "https://images.unsplash.com/photo-1466032454009-878beeedbb3e?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=1500&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc4.id
 })
 
@@ -300,7 +298,7 @@ event9 = Event.create({
   date: Date.today  + 4.days,
   cost: 180,
   description: "Join us for the World Whisky Dinner at Osaka Trading Co., located at Tramsheds Harold Park.",
-  image: "http://fillmurray.com/200/200",
+  image: "https://images.unsplash.com/photo-1456427651609-f494c36fbc45?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=996&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc6.id
 })
 
@@ -309,7 +307,7 @@ event10 = Event.create({
   date: Date.today + 5.days,
   cost: 65,
   description: "Captivated with a whole new way of seeing the world through a lens! ArtSHINE Gallery is working with Head on Photo Festival, the largest festival in Sydney for photography!",
-  image: "http://fillmurray.com/200/200",
+  image: "https://images.unsplash.com/photo-1483470561301-395323922c3c?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=844&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc7.id
 })
 
@@ -318,7 +316,7 @@ event11 = Event.create({
   date: Date.today  + 6.days,
   cost: 45,
   description: "Get results and get sweaty. High-intensity cardio and functional training to burn body fat and boost your fitness.",
-  image: "http://fillmurray.com/200/200",
+  image: "https://images.unsplash.com/photo-1490843524522-ee99e561bb90?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=997&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc8.id
 })
 
@@ -327,7 +325,7 @@ event12 = Event.create({
   date: Date.today + 7.days,
   cost: 55,
   description: "Sydney's hottest comedy venue!",
-  image: "http://fillmurray.com/200/200",
+  image: "https://images.unsplash.com/photo-1444005233317-7fb24f0da789?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=844&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc9.id
 })
 
@@ -335,8 +333,8 @@ event13 = Event.create({
   name: "Darbuka drumming classes",
   date: Date.today + 8.days,
   cost: 42,
-  description: "Learn the instrument with a talented teacher in a relaxed environment",
-  image: "http://fillmurray.com/200/200",
+  description: "Learn this LOUD instrument with a musically talented teacher in a relaxed environment",
+  image: "https://images.unsplash.com/photo-1470784591255-6c7c80d419c8?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=1151&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc10.id
 })
 
@@ -345,7 +343,7 @@ event14 = Event.create({
   date: Date.today + 9.days,
   cost: 42,
   description: "In Sydney for the first time ever. Journey into the heart of the Titanic and experience the world’s largest and most comprehensive exhibition about this iconic ship. Immerse yourself in the moving tale of Titanic’s first and final voyage and experience the sights, sounds and stories as if you were on the ship.",
-  image: "http://fillmurray.com/200/200",
+  image: "https://images.unsplash.com/photo-1466147105426-04f2362f932b?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=1000&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc11.id
 })
 
@@ -363,7 +361,7 @@ event16 = Event.create({
   date: Date.today + 8.days,
   cost: 10,
   description: "Two-week festival celebrating the best of Pyrmont and the Mudgee region",
-  image: "http://fillmurray.com/200/200",
+  image: "https://images.unsplash.com/photo-1485095329183-d0797cdc5676?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=1000&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc2.id
 })
 
@@ -372,7 +370,7 @@ event17 = Event.create({
   date: Date.today,
   cost: 142,
   description: "Best showcase of independent cinema from the States in Australia!!",
-  image: "http://fillmurray.com/200/200",
+  image: "https://images.unsplash.com/photo-1483081979849-4367277fb4d8?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=1000&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc20.id
 })
 
@@ -381,7 +379,16 @@ event18 = Event.create({
   date: Date.today,
   cost: 30,
   description: "Discover how easy it is to get to Sydney’s best markets by bike and do a spot of local shopping on the way.",
-  image: "http://fillmurray.com/200/200",
+  image: "https://images.unsplash.com/photo-1438183972690-6d4658e3290e?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=1125&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
+  location_id: loc2.id
+})
+
+event19 = Event.create({
+  name: "Bill Murray Presents:",
+  date: Date.today,
+  cost: 550,
+  description: "Code Code Code - code your way to greatness with Bill Murray and Jack Jeffress.",
+  image: "http://yesofcorsa.com/wp-content/uploads/2016/12/Bill-Murray-Wallpaper-High-Definition-1024x576.jpg",
   location_id: loc2.id
 })
 

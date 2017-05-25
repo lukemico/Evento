@@ -6,7 +6,7 @@
         <%= f.text_field :name, class: "form-control" %>
     </div>
     <div class="form-group">
-        <%= f.label :date %>
+        <%= f.label :date %> <br>
         <input id="datepicker" class="form-control" name="event[date]" />
     </div>
     <div class="form-group">
@@ -58,6 +58,6 @@
             <%= lf.select :state, ["NSW", "VIC", "TAS", "SA", "WA", "NT", "QLD", "ACT"], class: "form-control" %>
         </div>
     <% end %>
-    <%= f.submit("Create", class: "btn btn-success") %>
+    <%= f.submit("Create", class: "btn register-btn") %>
 <% end %>
     

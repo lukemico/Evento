@@ -5,6 +5,7 @@
     <%= csrf_meta_tags %>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
     <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -26,7 +27,7 @@
               <% if(@current_user) %>
                 <li>
                   <%= link_to(user_path(@current_user.id)) do %>
-                    <%=@current_user.email%> <i class="fa fa-user-circle-o"></i>
+                    Hello, <%=@current_user.first_name%>! <i class="fa fa-user-circle-o"></i>
                   <% end %>
                 </li>
                 <li>
@@ -43,7 +44,9 @@
               <% end %>
             </ul>
             <ul class="nav navbar-nav">
-              <li><%= link_to("Near Me", "/near_me") %></li>
+              <% if(@current_user) %>
+                <li><%= link_to("Near Me", "/near_me") %></li>
+              <% end %>
               <li><%= link_to("Whats on Today", "/today") %></li>
               <li><%= link_to("This week", "/this_week") %></li>
               <li><%= link_to("This Month", "/this_month") %></li>
@@ -60,10 +63,14 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            Left
+            <div class="copyright">
+              © 2017, General Assembly, WDi 21
+            </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            Right
+            <div class="design">
+              Built by Phil, Luke and Simone
+            </div>
           </div>
         </div>
       </div>

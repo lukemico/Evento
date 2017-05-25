@@ -1,5 +1,12 @@
 // ------ GOOGLE MAP TRACKING -------
+var latitude = latitude || null;
+var longitude = longitude || null;
+
 var initMap = function() {
+    if ( !latitude && !longitude ) {
+        return false;
+    }
+    
     var event = {lat: latitude, lng: longitude};
 
     var map = new google.maps.Map(document.getElementById('map'), {

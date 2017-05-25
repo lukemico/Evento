@@ -2,7 +2,8 @@
 <p class="text-success"><%= flash[:success] %></p>
 <p class="text-danger"><%= flash[:signup_error] %></p>
 <h1>Your profile</h1>
-<div class="collection">
+
+<div class="usr-profile">
   <p>
     <strong>First name:</strong>
     <%= @user.first_name %>
@@ -28,32 +29,33 @@
     <%= @user.phone_number %>
   </p>
 
-</div>
-<%= link_to 'Edit', edit_user_path(@user), class: "btn btn-default" %>
-<%= link_to 'Back', root_path, class: "btn btn-default" %>
+  <%= link_to 'Edit', edit_user_path(@user), class: "btn btn-default" %>
+  <%= link_to 'Back', root_path, class: "btn btn-default" %>
 
-<% if(@user.is_admin == true) %>
-  <%= link_to("Create Event", new_event_path(), class: "btn btn-default")%>
-<% end %>
-
-<hr>
-<h2>Your Events</h2>
-<table class="table table-striped">
-  <th>Event</th>
-  <th>Action</th>
-  <% @bookings.each do |b| %>
-  <tr>
-    <td>
-      <%= link_to(b.name, event_path(b.id)) %>
-    </td>
-
-    <td>
-      <%= form_tag("/bookings", method: :delete) do%>
-          <%= hidden_field_tag "event_id", :event_id, :value => b.id %>
-          <%= submit_tag("Remove Booking", class: "btn btn-default")%>
-      <% end %>
-    </td>
-  <tr>
+  <% if(@user.is_admin == true) %>
+    <%= link_to("Create Event", new_event_path(), class: "btn btn-default")%>
   <% end %>
 
-<table>
+  <hr>
+
+  <h2>Your Events</h2>
+  <table class="table table-striped ">
+    <th>Event</th>
+    <th></th>
+    <% @bookings.each do |b| %>
+    <tr>
+      <td>
+        <%= link_to(b.name, event_path(b.id)) %>
+      </td>
+
+      <td>
+        <%= form_tag("/bookings", method: :delete) do%>
+            <%= hidden_field_tag "event_id", :event_id, :value => b.id %>
+            <%= submit_tag("Remove Booking", class: "btn btn-default")%>
+        <% end %>
+      </td>
+    <tr>
+    <% end %>
+
+  </table>
+</div>

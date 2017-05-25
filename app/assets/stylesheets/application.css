@@ -53,3 +53,13 @@
 .btn .btn-primary {
   background-color: #8ebc00;
 }
+
+
+.panel-footer {
+    border-top: solid 1px #8ebc00;
+}
+
+.input-group {
+    width: 33%;
+    margin: 0 auto;
+}

@@ -13,24 +13,42 @@
       <nav class="navbar">
         <div class="container-fluid">
           <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
             <a class="navbar-brand" href="/">Eventö</a>
           </div>
-          <ul class="nav navbar-nav navbar-right">
-            <% if(@current_user) %>
-              <li><a href="/users/<%=@current_user.id %>"> <%=@current_user.email%> <i class="fa fa-user-circle-o"></i></a></li>
-              <li><a href="/users/<%=@current_user.id %>/edit">Edit Profile <i class="fa fa-pencil"></i></a></li>
-              <li><a rel="nofollow" data-method="delete" href="/logout">Logout <i class="fa fa-sign-out"></i></a></li>
-            <% else %>
-              <li><a href="/login">Login <i class="fa fa-sign-in"></i></a></li>
-              <li><a href="/register">Register <i class="fa fa-user-plus"></i></a> </li>
-            <% end %>
-          </ul>
-          <ul class="nav navbar-nav">
-            <li><%= link_to("Near Me", "/near_me") %></li>
-            <li><%= link_to("Whats on Today", "/today") %></li>
-            <li><%= link_to("This week", "/this_week") %></li>
-            <li><%= link_to("This Month", "/this_month") %></li>
-          </ul>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <% if(@current_user) %>
+                <li>
+                  <%= link_to(user_path(@current_user.id)) do %>
+                    <%=@current_user.email%> <i class="fa fa-user-circle-o"></i>
+                  <% end %>
+                </li>
+                <li>
+                  <%= link_to(edit_user_path(@current_user.id)) do %>
+                    Edit Profile <i class="fa fa-pencil"></i>
+                  <% end %>
+                </li>
+                <li>
+                  <a rel="nofollow" data-method="delete" href="/logout">Logout <i class="fa fa-sign-out"></i></a>
+                </li>
+              <% else %>
+                <li><a href="/login">Login <i class="fa fa-sign-in"></i></a></li>
+                <li><a href="/register">Register <i class="fa fa-user-plus"></i></a> </li>
+              <% end %>
+            </ul>
+            <ul class="nav navbar-nav">
+              <li><%= link_to("Near Me", "/near_me") %></li>
+              <li><%= link_to("Whats on Today", "/today") %></li>
+              <li><%= link_to("This week", "/this_week") %></li>
+              <li><%= link_to("This Month", "/this_month") %></li>
+            </ul>
+          </div>
         </div>
       </nav>
 
@@ -38,8 +56,22 @@
         <p class="text-danger"><%= flash[:error] %></p>
         <%= yield %>
       </main>
+      
+    <footer class="panel-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            Left
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            Right
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwTkj64Y-mZqXKjJTsVIT9ETuR3B289tg &callback=initMap"
   type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>

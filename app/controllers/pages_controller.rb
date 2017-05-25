@@ -1,26 +1,12 @@
 class PagesController < ApplicationController
 
-  def show
-  end
-
-  def staff_picks
-    @events = Event.all
-    @three_events = @events.sample(3)
-  end
-
   def near_me
-    event_locations = []
-    user_ip = @current_user.ip_address
-
-    Event.all.each do |i|
-      event_locations.push(i.location)
-    end
+    nearby_locations = Location.near(@current_user.address, 10).joins(:events)
 
     @near_by_events = []
-    event_locations.each do |i|
-      distance = Geocoder::Calculations.distance_between(i, user_ip)
-      if (distance < 1)
-        @near_by_events.push([i.latitude.to_f, i.longitude.to_f])
+    future_events_only = nearby_locations.map do |l|
+      l.events.where("date >= '#{Time.now}'").each do |e|
+        @near_by_events.push([l.latitude, l.longitude])
       end
     end
   end
@@ -45,11 +31,15 @@ class PagesController < ApplicationController
     next_month = Time.now + 30.days
 
     @month_events = Event.where( "date >= ? AND date <= ?", t, next_month)
-
-
-
-
-
   end
 
+  def search_events
+    input = params["post_code"]
+    near_by_locations = Location.near("#{input}, Australia", 5).joins(:events)
+    @events = near_by_locations.map do |e|
+      e.events
+    end
+    
+    raise "hell"
+  end
 end

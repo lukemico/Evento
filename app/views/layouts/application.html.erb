@@ -53,11 +53,10 @@
       </nav>
 
       <main class="container">
-        <p class="text-danger"><%= flash[:error] %></p>
         <%= yield %>
       </main>
       
-    <footer class="panel-footer">
+    <footer>
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -70,8 +69,7 @@
       </div>
     </footer>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwTkj64Y-mZqXKjJTsVIT9ETuR3B289tg &callback=initMap"
-  type="text/javascript"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwTkj64Y-mZqXKjJTsVIT9ETuR3B289tg &callback=initMap" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>

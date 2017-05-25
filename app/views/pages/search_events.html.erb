@@ -1,7 +1,7 @@
 <h3>Staff Picks</h3>
 
 <div class="row">
-  <% @three_events.each do |e| %>
+  <% @events.each do |e| %>
   <div class="col-xs-6 col-md-4">
     <%= link_to(image_tag(e.image, style: "width: 300px; height: 200px; margin: 5px;"), event_path(e.id)) %>
   </div>

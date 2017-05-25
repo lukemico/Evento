@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
 
   resources :pages
+  get "/search_events" => "pages#search_events"
   get "/near_me" => "pages#near_me"
   get "/staff_picks" => "pages#staff_picks"
   get "/today" => "pages#today"

@@ -1,12 +1,28 @@
+<div class="row">
+  <div class="col-md-12">
+    <%= form_tag(search_events_path, method: "get", class: "form-horizontal") do %>
+      <div class="input-group">
+        <%= text_field_tag(:post_code, params[:post_code], placeholder: "Search events by postcode", class: "form-control")%>
+        <span class="input-group-btn">
+        <%= submit_tag "Search", class: "btn btn-default"%>
+        </span>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<hr>
+
 <section>
   <div class="row main-event">
     <div class="col-md-12">
         <%= link_to(image_tag(@main_event.image, class: "img-responsive"), event_path(@main_event.id)) %>
     </div>
 </section>
-<hr>
-<section>
 
+<hr>
+
+<section>
   <div class="row">
     <% @three_events.each do |e| %>
     <div class="col-xs-6 col-md-4">

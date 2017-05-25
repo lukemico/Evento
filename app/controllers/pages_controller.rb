@@ -39,7 +39,10 @@ class PagesController < ApplicationController
     @events = near_by_locations.map do |e|
       e.events
     end
+    if (!@events.any?)
+      flash[:error] = "Your search didn't have any results."
+      redirect_to("/")
+    end
     
-    raise "hell"
   end
 end

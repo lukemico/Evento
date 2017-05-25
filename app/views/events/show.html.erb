@@ -1,29 +1,43 @@
-<h1>Event: <%= @event.name %></h1>
-<img src=<%= @event.image %> style="width: 500px">
+<h1><%= @event.name %></h1>
+<div class="row">
+    <div class="col-md-6">
+        <img src=<%= @event.image %> style="width: 500px">
+    </div>
 
-<div>
-    <p>There are <%= @num_of_ppl %> people going to this event</p>
-    <p>Date: <%= @event.date %> </p>
-    <p>Cost: $<%= @event.cost %> </p>
-    <p>Description: <%= @event.description %> </p>
-    <p>Event Types: </p>
-    <ul>
-    <% @event.event_types.each do |e| %>
-        <li><%= e.event_type %></li>
-    <% end %>
-    </ul>
+    <div class="col-md-6">
+            <br>
+        <p class="lead text-left"><i class="fa fa-users" aria-hidden="true"></i>
+            <b><%= @num_of_ppl %></b> people going to this event<br>
+        <b>Date & Time:</b> <%= @event.date.strftime("%A %e %B %Y - %l : %m %p") %><br>
+        <b>Cost:</b> $<%= @event.cost.to_i %> <br>
+        <b>Description:</b> <%= @event.description %> <br>
+        <b>Event Types:</b>
+            <ul>
+                <% @event.event_types.each do |e| %>
+                    <li class="lead text-left"><%= e.event_type %></li>
+                <% end %>
+            </ul>
+        </p>
+        <div class="row">
+            <div class="col-md-offset-6 col-md-6">
+                <% if(@current_user) %>
+                    <%= form_tag("/bookings", method: :post) do%>
+                        <%= hidden_field_tag "event_id", :event_id, :value => @event.id %>
+                        <%= submit_tag("Sign up", class: "btn btn-primary", style: "background-color: #8ebc00; border: #8ebc00")%>
+                    <% end %>
+                <% end %>
+            </div>
+        </div>
+
+    </div>
 </div>
 
-<% if(@current_user) %>
-    <%= form_tag("/bookings", method: :post) do%>
-        <%= hidden_field_tag "event_id", :event_id, :value => @event.id %>
-        <%= submit_tag("Sign up", class: "btn btn-primary")%>
-    <% end %>
-<% end %>
 
-<h2>Event Map</h2>
+<hr>
+    <br>
+<h2></h2>
 <div id="map"></div>
-
+    <br>
 <script>
     var latitude = <%= @location.latitude %>;
     var longitude = <%= @location.longitude %>;

@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -47,7 +47,7 @@
               <% if(@current_user) %>
                 <li><%= link_to("Near Me", "/near_me") %></li>
               <% end %>
-              <li><%= link_to("Whats on Today", "/today") %></li>
+              <li><%= link_to("Today", "/today") %></li>
               <li><%= link_to("This week", "/this_week") %></li>
               <li><%= link_to("This Month", "/this_month") %></li>
             </ul>
@@ -58,7 +58,7 @@
       <main class="container">
         <%= yield %>
       </main>
-      
+
     <footer>
       <div class="container">
         <div class="row">

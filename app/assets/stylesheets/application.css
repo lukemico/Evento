@@ -175,10 +175,10 @@ h1 {
     margin: 0 auto;
 }
 
-@font-face {
+/*@font-face {
   font-family: 'WebComponentsIcons';
   src: font-url("/assets/stylesheets/kendo/WebComponentsIcons.eot");
   src: font-url("/assets/WebComponentsIcons.eot?#iefix") format("embedded-opentype"), font-url("/assets/stylesheets/kendo/WebComponentsIcons.svg#WebComponentsIcons") format("svg"), font-url("/assets/stylesheets/kendo/WebComponentsIcons.woff") format("woff"), font-url("/assets/stylesheets/lendo/WebComponentsIcons.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}
+}*/

@@ -1,9 +1,25 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 #map-2 {
     height: 500px;
     width: 100%;
     margin: 0 auto;
+}
 
+.caption {
+    width:300px;
+    bottom: 20px;
+    margin-left: -150px;
+    left: 50%;
+    position: absolute;
+}
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    margin:0;
+    padding:0;
+}
+
+.caption h4 {
+
+    -webkit-font-smoothing: antialiased;
 }

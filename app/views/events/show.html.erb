@@ -11,7 +11,8 @@
         <b>Date & Time:</b> <%= @event.date.strftime("%A %e %B %Y - %l : %m %p") %><br>
         <b>Cost:</b> $<%= @event.cost.to_i %> <br>
         <b>Description:</b> <%= @event.description %> <br>
-        <b>Event Types:</b>
+        <b>Event Address:</b> <%= @event.location.street_number %> <%= @event.location.street%>, <%= @event.location.suburb%>, <%= @event.location.postcode%>, <%= @event.location.country %><br>
+        <b>Event genre/s:</b>
             <ul>
                 <% @event.event_types.each do |e| %>
                     <li class="lead text-left"><%= e.event_type %></li>

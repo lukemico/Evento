@@ -177,8 +177,8 @@ h1 {
 
 font-face {
   font-family: 'WebComponentsIcons';
-  src: font-url("/assets/stylesheets/kendo/WebComponentsIcons.eot");
-  src: font-url("/assets/stylesheets/kendo/WebComponentsIcons.eot?#iefix") format("embedded-opentype"), font-url("/assets/stylesheets/kendo/WebComponentsIcons.svg#WebComponentsIcons") format("svg"), font-url("/assets/stylesheets/kendo/WebComponentsIcons.woff") format("woff"), font-url("/assets/stylesheets/kendo/WebComponentsIcons.ttf") format("truetype");
+  src: font-url("kendo/fonts/glyphs/WebComponentsIcons.eot");
+  src: font-url("kendo/fonts/glyphs/WebComponentsIcons.eot?#iefix") format("embedded-opentype"), font-url("kendo/fonts/glyphs/WebComponentsIcons.svg#WebComponentsIcons") format("svg"), font-url("kendo/fonts/glyphs/WebComponentsIcons.woff") format("woff"), font-url("kendo/fonts/glyphs/WebComponentsIcons.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

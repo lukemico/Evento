@@ -219,10 +219,10 @@ type10 = EventType.create({
 Event.destroy_all
 
 event1 = Event.create({
-  name: "GA BootCamp",
+  name: "GA Boot Camp",
   date: Date.today,
   cost: 100.00,
-  description: "The GA Coding Bootcamp",
+  description: "The General Assembly introduction to coding boot camp",
   # event_type_id: type4.id,
   image: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?dpr=1&amp;auto=compress,format&amp;fit=crop&amp;w=767&amp;h=511&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc1.id
@@ -232,14 +232,14 @@ event2 = Event.create({
   name: "Ice Skating",
   date: Date.today,
   cost: 20,
-  description: "Learn to Iceskate",
+  description: "Learn to ice skate, with the best instructors in town.",
   # event_type_id: type5.id,
   image:"https://images.unsplash.com/photo-1448716061616-5856dfdb900e?dpr=1&amp;auto=compress,format&amp;fit=crop&amp;w=568&amp;h=379&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc1.id
 })
 
 event3 = Event.create({
-  name: "Bridge Climbing",
+  name: "Harbour Bridge Climb",
   date: Date.today,
   cost: 120,
   description: "Climb on the iconic Harbour Bridge! Just don't fall off",
@@ -252,7 +252,7 @@ event4 = Event.create({
   name: "VIVID Sydney",
   date: Date.today,
   cost: 89,
-  description: "VIVID Sydney is back to light up our city from 26 May to 17 June!",
+  description: "VIVID Sydney is back to light up our city from 26th May to 17th June!",
   image: "https://images.unsplash.com/photo-1466903001289-713a94ef08df?dpr=1&amp;auto=compress,format&amp;fit=crop&amp;w=568&amp;h=379&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc6.id
 })
@@ -267,7 +267,7 @@ event5 = Event.create({
 })
 
 event6 = Event.create({
-  name: "Rock 'n' Roll & Alternative Market",
+  name: "Rock 'n' Roll Alternative Market",
   date: Date.today + 1.days,
   cost: 90,
   description: "A one-off line-up of Sydney bands for an inner-west music and shopping extravaganza.",
@@ -276,10 +276,10 @@ event6 = Event.create({
 })
 
 event7 = Event.create({
-  name: "Brewhouse Shala yoga",
+  name: "Brewhouse Shala Yoga",
   date: Date.today + 2.days,
   cost: 25,
-  description: "For a cost of only $25, you’ll be able to enjoy a 60 minute yoga class, followed by a half pint of your favourite craft beer from the guys at Rocks Brewing.",
+  description: "For the cost of only $25, you’ll be able to enjoy a 60 minute yoga class, followed by a half pint of your favourite craft beer from the guys at Rocks Brewing.",
   image: "https://images.unsplash.com/photo-1473022082832-5a30701d4f2c?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=1000&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc3.id
 })
@@ -294,7 +294,7 @@ event8 = Event.create({
 })
 
 event9 = Event.create({
-  name: "World Whisky Dinner at Osaka Trading Co.",
+  name: "World Whisky Dinner",
   date: Date.today  + 4.days,
   cost: 180,
   description: "Join us for the World Whisky Dinner at Osaka Trading Co., located at Tramsheds Harold Park.",
@@ -312,7 +312,7 @@ event10 = Event.create({
 })
 
 event11 = Event.create({
-  name: "Group fitness in Alexandria Park",
+  name: "Group Fitness - Alexandria Park",
   date: Date.today  + 6.days,
   cost: 45,
   description: "Get results and get sweaty. High-intensity cardio and functional training to burn body fat and boost your fitness.",
@@ -321,7 +321,7 @@ event11 = Event.create({
 })
 
 event12 = Event.create({
-  name: "Comedy On Edge",
+  name: "Comedy On The Edge",
   date: Date.today + 7.days,
   cost: 55,
   description: "Sydney's hottest comedy venue!",
@@ -330,7 +330,7 @@ event12 = Event.create({
 })
 
 event13 = Event.create({
-  name: "Darbuka drumming classes",
+  name: "Darbuka Drumming Classes",
   date: Date.today + 8.days,
   cost: 42,
   description: "Learn this LOUD instrument with a musically talented teacher in a relaxed environment",
@@ -339,10 +339,10 @@ event13 = Event.create({
 })
 
 event14 = Event.create({
-  name: "Titanic the Exhibition",
+  name: "Titanic: The Exhibition",
   date: Date.today + 9.days,
   cost: 42,
-  description: "In Sydney for the first time ever. Journey into the heart of the Titanic and experience the world’s largest and most comprehensive exhibition about this iconic ship. Immerse yourself in the moving tale of Titanic’s first and final voyage and experience the sights, sounds and stories as if you were on the ship.",
+  description: "In Sydney for the first time ever, journey into the heart of the Titanic and experience the world’s largest and most comprehensive exhibition about this iconic ship. Immerse yourself in the moving tale of Titanic’s first and final voyage and experience the sights, sounds and stories as if you were on the ship.",
   image: "https://images.unsplash.com/photo-1466147105426-04f2362f932b?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=1000&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
   location_id: loc11.id
 })
@@ -652,47 +652,47 @@ booking4 = Booking.create({
 EventTypesEvent.destroy_all
 
 event_types_events1 = EventTypesEvent.create({
-event_type_id: type1.id,
+event_type_id: type5.id,
 event_id: event18.id
 })
 
 event_types_events2 = EventTypesEvent.create({
-event_type_id: type2.id,
+event_type_id: type3.id,
 event_id: event17.id
 })
 
 event_types_event3 = EventTypesEvent.create({
-event_type_id: type3.id,
+event_type_id: type9.id,
 event_id: event16.id
 })
 
 event_types_event4 = EventTypesEvent.create({
-event_type_id: type4.id,
+event_type_id: type8.id,
 event_id: event15.id
 })
 
 event_types_events5 = EventTypesEvent.create({
-event_type_id: type5.id,
+event_type_id: type8.id,
 event_id: event14.id
 })
 
 event_types_events6 = EventTypesEvent.create({
-event_type_id: type5.id,
+event_type_id: type2.id,
 event_id: event13.id
 })
 
 event_types_events7 = EventTypesEvent.create({
-event_type_id: type6.id,
+event_type_id: type1.id,
 event_id: event12.id
 })
 
 event_types_events8 = EventTypesEvent.create({
-event_type_id: type7.id,
+event_type_id: type5.id,
 event_id: event11.id
 })
 
 event_types_events9 = EventTypesEvent.create({
-event_type_id: type8.id,
+event_type_id: type4.id,
 event_id: event10.id
 })
 
@@ -702,12 +702,12 @@ event_id: event9.id
 })
 
 event_types_events11 = EventTypesEvent.create({
-event_type_id: type10.id,
+event_type_id: type8.id,
 event_id: event8.id
 })
 
 event_types_events12 = EventTypesEvent.create({
-event_type_id: type1.id,
+event_type_id: type5.id,
 event_id: event7.id
 })
 
@@ -717,12 +717,12 @@ event_id: event6.id
 })
 
 event_types_events14 = EventTypesEvent.create({
-event_type_id: type3.id,
+event_type_id: type9.id,
 event_id: event5.id
 })
 
 event_types_events15 = EventTypesEvent.create({
-event_type_id: type4.id,
+event_type_id: type9.id,
 event_id: event4.id
 })
 
@@ -732,12 +732,12 @@ event_id: event3.id
 })
 
 event_types_events17 = EventTypesEvent.create({
-event_type_id: type6.id,
+event_type_id: type5.id,
 event_id: event2.id
 })
 
 event_types_events18 = EventTypesEvent.create({
-event_type_id: type7.id,
+event_type_id: type4.id,
 event_id: event1.id
 })
 

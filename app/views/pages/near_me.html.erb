@@ -1,29 +1,27 @@
-<h1>Near Me</h1>
+<h1>Events Near Me</h1>
 
 <div id="map-2"></div>
 
 <script>
-
-var eventLocations = <%= @near_by_events %>;
-var initMap = function () {
-  for (var i = 0; i < eventLocations.length; i++) {
-    var lat = eventLocations[i][0];
-    var long = eventLocations[i][1];
-    mapTwo(lat, long);
-  }
-};
-var nearMeMap;
-function mapTwo(lat, long) {
-  var event = {lat: parseFloat(lat), lng: parseFloat(long)};
-  nearMeMap = nearMeMap || new google.maps.Map(document.querySelector("#map-2"), {
-      zoom: 14,
-      center: event
-  });
-  var marker = new google.maps.Marker({
-      title: "Event",
-      position: event,
-      map: nearMeMap
-  })
-};
-
+  var eventLocations = <%= @near_by_events %>;
+  var initMap = function () {
+    for (var i = 0; i < eventLocations.length; i++) {
+      var lat = eventLocations[i][0];
+      var long = eventLocations[i][1];
+      mapTwo(lat, long);
+    }
+  };
+  var nearMeMap;
+  function mapTwo(lat, long) {
+    var event = {lat: parseFloat(lat), lng: parseFloat(long)};
+    nearMeMap = nearMeMap || new google.maps.Map(document.querySelector("#map-2"), {
+        zoom: 14,
+        center: event
+    });
+    var marker = new google.maps.Marker({
+        title: "Event",
+        position: event,
+        map: nearMeMap
+    })
+  };
 </script>

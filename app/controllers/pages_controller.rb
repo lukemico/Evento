@@ -30,7 +30,7 @@ class PagesController < ApplicationController
 
   def search_events
     input = params["post_code"]
-    near_by_locations = Location.near("#{input}, Australia", 5).joins(:events)
+    near_by_locations = Location.near("#{input}, Australia", 5)
     @events = near_by_locations.map do |e|
       e.events
     end

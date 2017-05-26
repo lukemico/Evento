@@ -1,12 +1,13 @@
 <h1>Today <br>
     <small>You might be still in time to commute to some real fun...</small>
 </h1>
+<hr>
 <div class="container">
     <div class="row">
       <% @today_events.each do |t| %>
         <div class="col-sm-4">
             <div class="col-sm-12 thumbnail text-center img-responsive">
-                <%= link_to(image_tag(t.image, style: "width: 300px; height: 200px; margin-bottom: 20px;", class: "img-responsive"), event_path(t.id) )%>
+                <%= link_to(image_tag(t.image, style: "width: 300px; height: 200px; margin-bottom: 20px; box-shadow: 5px 5px 10px rgba(0, 0, 0, .3)", class: "img-responsive"), event_path(t.id) )%>
                 <div class="caption">
                     <h4><strong><%= link_to(t.name, event_path(t), style: "color: #fff; text-shadow: 5px 5px 5px black;") %></strong></h4>
                 </div>

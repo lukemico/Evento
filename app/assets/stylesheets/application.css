@@ -52,6 +52,7 @@
 
 .carousel-heading {
     font-size: 50px;
+    text-shadow: 5px 5px 5px black;
 }
 
 .table {
@@ -165,3 +166,11 @@ h1 {
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
+.main-heading {
+    margin-top: 0px;
+    font-size: 50px;
+}
+
+#event_image {
+    margin: 0 auto;
+}

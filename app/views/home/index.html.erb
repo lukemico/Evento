@@ -16,15 +16,32 @@
 <hr>
 
 <section>
-  <div class="row main-event">
-    <div class="col-md-12">
-        <%= link_to(image_tag(@main_event.image, class: "img-responsive"), event_path(@main_event.id)) %>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+    <div class="carousel-inner" role="listbox">
+
+      <% @images.each_with_index do |m, i| %>   
+        <div class="item <%= i == 0 ? 'active' : '' %>">
+          <%= link_to(image_tag(m[0]), event_path(m[2])) %>
+          <div class="carousel-caption" role="option">
+            <p class="carousel-heading"><%= m[1] %></p>
+          </div>
+        </div>
+      <% end %> 
     </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
   </div>
 </section>
 
 <hr>
-
+<!-- 
 <section>
   <div class="row">
     <% @three_events.each do |e| %>
@@ -34,3 +51,5 @@
     <% end %>
   </div>
 </section>
+
+-->

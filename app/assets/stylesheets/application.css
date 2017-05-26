@@ -45,9 +45,13 @@
     text-align: center;
 }
 
-.main-event > div > a > img {
+.carousel-inner > .item > a > img {
     width: 100%;
-    text-align: center;
+    height: 700px;
+}
+
+.carousel-heading {
+    font-size: 50px;
 }
 
 .table {
@@ -91,6 +95,7 @@ footer {
 }
 
 main {
+    margin-top: 70px;
     margin-bottom: 30px;
 }
 
@@ -159,3 +164,4 @@ h1 {
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
+

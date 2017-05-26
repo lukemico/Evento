@@ -31,10 +31,6 @@ class EventsController < ApplicationController
     event.save
   end
 
-  def delete
-    
-  end
-
   private
   def event_params
     params.require(:event).permit(:name, :date, :cost, :description, :image, :location_id, :event_type_ids => [], location_attributes: [:state, :street, :street_number, :state, :postcode, :suburb])

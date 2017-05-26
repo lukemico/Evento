@@ -10,7 +10,7 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_self
+    *= require_self
  *= require events.scss
  *= require users.scss
  *= require pages.scss
@@ -45,9 +45,14 @@
     text-align: center;
 }
 
-.main-event > div > a > img {
+.carousel-inner > .item > a > img {
     width: 100%;
-    text-align: center;
+    height: 700px;
+}
+
+.carousel-heading {
+    font-size: 50px;
+    text-shadow: 5px 5px 5px black;
 }
 
 .table {
@@ -91,6 +96,7 @@ footer {
 }
 
 main {
+    margin-top: 70px;
     margin-bottom: 30px;
 }
 
@@ -158,4 +164,21 @@ h1 {
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.main-heading {
+    margin-top: 0px;
+    font-size: 50px;
+}
+
+#event_image {
+    margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'WebComponentsIcons';
+  src: font-url("/assets/stylesheets/kendo/WebComponentsIcons.eot");
+  src: font-url("/assets/WebComponentsIcons.eot?#iefix") format("embedded-opentype"), font-url("/assets/stylesheets/kendo/WebComponentsIcons.svg#WebComponentsIcons") format("svg"), font-url("/assets/stylesheets/kendo/WebComponentsIcons.woff") format("woff"), font-url("/assets/stylesheets/lendo/WebComponentsIcons.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }

@@ -1,84 +1,56 @@
-# README
-1. Overview of the idea and technologies used
-  - Evento is an app that allows you find events based on your current location, on specific location and or date range.
+# Evento - Project 2
 
-2. Demo of Features
+First major group project done with Simone and Luke. It is an events management website.
 
-3. Overview of code structure
-  - Schema
-    . 6 tables (including 2 join tables: booking adn event_type_events)
+## Overview
+* Overview of the idea and technologies used
+  * Evento is an app that allows you find events based on your current location, on specific location and or date range.
 
-4. Group Work
-  - Main code machine: Phil
-  - Clown and Coding support and CSS: Simone
-  - Code support, Organisational structure (Trello wiz): Luke
+* Overview of code structure
+  * Schema
+    * 6 tables (including 2 join tables: booking adn event_type_events)
 
-  - Everyone cooperated trough the visual and the website, so that it could be a learning experience
-  
+* Group Work
+  * Main code machine: Phil
+  * Clown and Coding support and CSS: Simone
+  * Code support, Organisational structure (Trello wiz): Luke
+  * Everyone cooperated trough the visual and the website, so that it could be a learning experience
+ 
+### Languages
+* Rails
+* Ruby
+* JavaScript - handle the map data and the kendo widget (event date in create event)
+* CSS - Used to override some Bootstrap defaults
 
-Languages
-. Rails
-. Ruby
-. JavaScript - handle the map data and the kendo widget (event date in create event)
-. CSS - Used to override some Bootstrap defaults
+### Libraries
+* Bootsrap
+* Kendo
+* FontAwesome - CSS toolkit
 
-Libraries
-. Bootsrap
-. Kendo
-. FontAwesome - CSS toolkit
+### Gems
+* bcrypt
+* Geocoder
 
-Gems
-. bcrypt
-. Geocoder
-. Postgres
+### APIs
+* Google Maps
+* Cloudinary
 
-APIs
-Google Maps
-Cloudinary
+### Features
+* Event Search based on postcode
+* Event search based on user current location
+* Register to an event and see how many other users are currently registered
+* Predefined collections of events based on event's date
 
-Features
-. Event Search based on postcode
-. Event search based on user current location
-. Register to an event and see how many other users are currently registered
-. Predefined collections of events based on event's date
+### Known Bugs
+* Nearme functionality will not work while not logged in
+* Datepicker icons not showing on Heroku
 
-Bugs
-. Search results won't show on mobile
-. Datepicker icons not showing on Heroku
+### What's next
+* Extend research
+* Social login & share
+* Ratings
+* Calendar
+* validation
 
-What's next
-. Extend research
-. Social login & share
-. Ratings
-. Calendar
-
-
-
-
-
-
-
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Live
+Live version can be found [HERE](https://evento-app.herokuapp.com/)

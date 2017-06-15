@@ -1,3 +1,4 @@
+
 class UsersController < ApplicationController
   before_action :check_if_logged_out, only:[:new, :create]
 

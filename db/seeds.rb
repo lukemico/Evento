@@ -325,7 +325,7 @@ event12 = Event.create({
   date: Date.today + 7.days,
   cost: 55,
   description: "Sydney's hottest comedy venue!",
-  image: "https://images.unsplash.com/photo-1444005233317-7fb24f0da789?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=844&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
+  image: "https://images.unsplash.com/photo-1506882741710-98761c574b48?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=794de1f3a10ddf74c928e6cebd1aa55e&auto=format&fit=crop&w=1650&q=80",
   location_id: loc9.id
 })
 

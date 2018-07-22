@@ -224,7 +224,7 @@ event1 = Event.create({
   cost: 100.00,
   description: "The General Assembly introduction to coding boot camp",
   # event_type_id: type4.id,
-  image: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?dpr=1&amp;auto=compress,format&amp;fit=crop&amp;w=767&amp;h=511&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
+  image: "https://res.cloudinary.com/lukemico/image/upload/v1532174481/photo-1488190211105-8b0e65b80b4e_hnr0sp.jpg",
   location_id: loc1.id
 })
 
@@ -234,7 +234,7 @@ event2 = Event.create({
   cost: 20,
   description: "Learn to ice skate, with the best instructors in town.",
   # event_type_id: type5.id,
-  image:"https://images.unsplash.com/photo-1448716061616-5856dfdb900e?dpr=1&amp;auto=compress,format&amp;fit=crop&amp;w=568&amp;h=379&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
+  image:"https://res.cloudinary.com/lukemico/image/upload/v1532174557/photo-1448716061616-5856dfdb900e_zxnc7g.jpg",
   location_id: loc1.id
 })
 
@@ -244,7 +244,7 @@ event3 = Event.create({
   cost: 120,
   description: "Climb on the iconic Harbour Bridge! Just don't fall off",
   # event_type_id: type5.id,
-  image: "https://images.unsplash.com/photo-1447953649934-e82a2f5a11f4?dpr=1&amp;auto=compress,format&amp;fit=crop&amp;w=568&amp;h=379&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
+  image: "https://res.cloudinary.com/lukemico/image/upload/v1532174563/photo-1447953649934-e82a2f5a11f4_eouong.jpg",
   location_id: loc2.id
 })
 
@@ -253,7 +253,7 @@ event4 = Event.create({
   date: Date.today,
   cost: 89,
   description: "VIVID Sydney is back to light up our city from 26th May to 17th June!",
-  image: "https://images.unsplash.com/photo-1466903001289-713a94ef08df?dpr=1&amp;auto=compress,format&amp;fit=crop&amp;w=568&amp;h=379&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
+  image: "https://res.cloudinary.com/lukemico/image/upload/v1532174421/photo-1466903001289-713a94ef08df_gg2rfr.jpg",
   location_id: loc6.id
 })
 
@@ -262,7 +262,7 @@ event5 = Event.create({
   date: Date.today,
   cost: 120,
   description: "Evolving a Tasty Niche is in response to the global phenomenon of creative food careers, from food photography, cake design, dining, to food art, fueled by the power of social media. It is a world injected with robust, novel energy everyday. Today’s niche easily becomes tomorrow’s cliché.",
-  image: "https://images.unsplash.com/reserve/DHHQbqc0RrWVf0uDNe5E_The%20Litte%20Cafe.jpg?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=844&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
+  image: "https://res.cloudinary.com/lukemico/image/upload/v1532174381/DHHQbqc0RrWVf0uDNe5E_The_Litte_Cafe_lvb2bl.jpg",
   location_id: loc8.id
 })
 
@@ -271,7 +271,7 @@ event6 = Event.create({
   date: Date.today + 1.days,
   cost: 90,
   description: "A one-off line-up of Sydney bands for an inner-west music and shopping extravaganza.",
-  image: "https://images.unsplash.com/photo-1446057032654-9d8885db76c6?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=937&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
+  image: "https://res.cloudinary.com/lukemico/image/upload/v1532174328/photo-1446057032654-9d8885db76c6_wok3o5.jpg",
   location_id: loc19.id
 })
 
@@ -280,7 +280,7 @@ event7 = Event.create({
   date: Date.today + 2.days,
   cost: 25,
   description: "For the cost of only $25, you’ll be able to enjoy a 60 minute yoga class, followed by a half pint of your favourite craft beer from the guys at Rocks Brewing.",
-  image: "https://images.unsplash.com/photo-1473022082832-5a30701d4f2c?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=1000&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
+  image: "https://res.cloudinary.com/lukemico/image/upload/v1532174609/photo-1473022082832-5a30701d4f2c_epko5b.jpg",
   location_id: loc3.id
 })
 
@@ -289,7 +289,7 @@ event8 = Event.create({
   date: Date.today + 3.days,
   cost: 40,
   description: "Add a of spice to your visit to this fantastic Museum and challenge yourself in this short and quirky trail!",
-  image: "https://images.unsplash.com/photo-1466032454009-878beeedbb3e?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=1500&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
+  image: "https://res.cloudinary.com/lukemico/image/upload/v1532174535/photo-1466032454009-878beeedbb3e_ofmltj.jpg",
   location_id: loc4.id
 })
 
@@ -298,7 +298,7 @@ event9 = Event.create({
   date: Date.today  + 4.days,
   cost: 180,
   description: "Join us for the World Whisky Dinner at Osaka Trading Co., located at Tramsheds Harold Park.",
-  image: "https://images.unsplash.com/photo-1456427651609-f494c36fbc45?dpr=1&amp;auto=format&amp;fit=crop&amp;w=1500&amp;h=996&amp;q=80&amp;cs=tinysrgb&amp;crop=&amp;bg=",
+  image: "https://res.cloudinary.com/lukemico/image/upload/v1532174523/photo-1456427651609-f494c36fbc45_ldjxvc.jpg",
   location_id: loc6.id
 })
 
@@ -383,7 +383,10 @@ event18 = Event.create({
   location_id: loc2.id
 })
 
-# User's IP address: 202.171.181.44
+
+
+# User's IP address: 124.149.120.64
+
 User.destroy_all
 
 user1 = User.create({
@@ -625,6 +628,8 @@ user20 = User.create({
   password_confirmation: "chicken",
   ip_address: "202.171.181.44"
 })
+
+
 
 Booking.destroy_all
 
